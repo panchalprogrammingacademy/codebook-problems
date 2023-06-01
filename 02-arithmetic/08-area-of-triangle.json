@@ -1,0 +1,76 @@
+{
+    "title": "Area of triangle",
+    "description": "<h3><strong>Problem Description</strong></h3><p>Write a program to input two <strong>integers, </strong>base and height of the triangle and print its area.</p><p>Area of triangle = <span class=\"ql-formula\" data-value=\"\\dfrac{1}{2} * base * height\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><mo>∗</mo><mi>b</mi><mi>a</mi><mi>s</mi><mi>e</mi><mo>∗</mo><mi>h</mi><mi>e</mi><mi>i</mi><mi>g</mi><mi>h</mi><mi>t</mi></mrow><annotation encoding=\"application/x-tex\">\\dfrac{1}{2} * base * height</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 2.00744em; vertical-align: -0.686em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height: 1.32144em;\"><span class=\"\" style=\"top: -2.314em;\"><span class=\"pstrut\" style=\"height: 3em;\"></span><span class=\"mord\"><span class=\"mord\">2</span></span></span><span class=\"\" style=\"top: -3.23em;\"><span class=\"pstrut\" style=\"height: 3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width: 0.04em;\"></span></span><span class=\"\" style=\"top: -3.677em;\"><span class=\"pstrut\" style=\"height: 3em;\"></span><span class=\"mord\"><span class=\"mord\">1</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height: 0.686em;\"><span class=\"\"></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mspace\" style=\"margin-right: 0.222222em;\"></span><span class=\"mbin\">∗</span><span class=\"mspace\" style=\"margin-right: 0.222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.69444em; vertical-align: 0em;\"></span><span class=\"mord mathnormal\">b</span><span class=\"mord mathnormal\">a</span><span class=\"mord mathnormal\">s</span><span class=\"mord mathnormal\">e</span><span class=\"mspace\" style=\"margin-right: 0.222222em;\"></span><span class=\"mbin\">∗</span><span class=\"mspace\" style=\"margin-right: 0.222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.88888em; vertical-align: -0.19444em;\"></span><span class=\"mord mathnormal\">h</span><span class=\"mord mathnormal\">e</span><span class=\"mord mathnormal\">i</span><span class=\"mord mathnormal\" style=\"margin-right: 0.03588em;\">g</span><span class=\"mord mathnormal\">h</span><span class=\"mord mathnormal\">t</span></span></span></span></span>﻿</span> </p><p><br></p><p><strong>NOTE:</strong> <em><u>The type of input variables must be integer, otherwise it will defeat the purpose of the problem.</u></em></p><p><br></p><p><br></p><h3><strong>Input Format</strong></h3><p>A single line of input containing two space separated integers base and height respectively.</p><p><br></p><h3><strong>Output Format</strong></h3><p>A single line of output containing area of triangle upto six decimal places.</p><p><br></p><h3><strong>Constraints</strong></h3><p><span class=\"ql-formula\" data-value=\"0 \\le base, height \\le 100\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>b</mi><mi>a</mi><mi>s</mi><mi>e</mi><mo separator=\"true\">,</mo><mi>h</mi><mi>e</mi><mi>i</mi><mi>g</mi><mi>h</mi><mi>t</mi><mo>≤</mo><mn>100</mn></mrow><annotation encoding=\"application/x-tex\">0 \\le base, height \\le 100</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.78041em; vertical-align: -0.13597em;\"></span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.88888em; vertical-align: -0.19444em;\"></span><span class=\"mord mathnormal\">b</span><span class=\"mord mathnormal\">a</span><span class=\"mord mathnormal\">s</span><span class=\"mord mathnormal\">e</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right: 0.166667em;\"></span><span class=\"mord mathnormal\">h</span><span class=\"mord mathnormal\">e</span><span class=\"mord mathnormal\">i</span><span class=\"mord mathnormal\" style=\"margin-right: 0.03588em;\">g</span><span class=\"mord mathnormal\">h</span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.64444em; vertical-align: 0em;\"></span><span class=\"mord\">1</span><span class=\"mord\">0</span><span class=\"mord\">0</span></span></span></span></span>﻿</span>  </p><p><br></p><h3><strong>Example 1</strong></h3><pre class=\"ql-syntax\" spellcheck=\"false\">10 20\n100.000000\n</pre><p><br></p><h3><strong>Example 2</strong></h3><pre class=\"ql-syntax\" spellcheck=\"false\">5 5\n12.500000\n</pre>",
+    "supported_languages": [
+        "c",
+        "cpp",
+        "py",
+        "java",
+        "js"
+    ],
+    "test_cases": [
+        {
+            "input": "10 20\n",
+            "output": "100.000000\n",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": " 5 5\n",
+            "output": "12.500000\n",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "10 3\n",
+            "output": "15.000000\n\n",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "3 3\n",
+            "output": "4.500000\n",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "0 0\n",
+            "output": "0.000000\n",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "0 100\n",
+            "output": "0.000000\n",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "100 0\n",
+            "output": "0.000000\n",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "100 100\n",
+            "output": "5000.000000\n",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        }
+    ],
+    "templates": {
+        "c": "#include <stdio.h>\nint main() {\n    // your code goes here\n    int base, height;\n    return 0;\n}",
+        "cpp": "#include <iostream>\nusing namespace std;\nint main() {\n    // your code goes here\n    int base, height;\n    return 0;\n}",
+        "py": "# your code goes here\n",
+        "java": "public class Main {\n    public static void main(String[] args) {\n        // your code goes here\n        int base, height;\n    }\n}",
+        "js": "// your code goes here\n"
+    }
+}
