@@ -1,0 +1,83 @@
+{
+    "title": "Multiply two numbers",
+    "description": "<h3><strong>Problem Description</strong></h3><p>Write a program to input two numbers A and B from user and display their product.</p><p><br></p><h3><strong>Input Format</strong></h3><p>A single line of input containing two space separated integers A and B respectively.</p><p><br></p><h3><strong>Output Format</strong></h3><p>A single line of output containing product of two numbers.</p><p><br></p><h3><strong>Constraints</strong></h3><p><span class=\"ql-formula\" data-value=\"-100 \\le A, B \\le 100\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>100</mn><mo>≤</mo><mi>A</mi><mo separator=\"true\">,</mo><mi>B</mi><mo>≤</mo><mn>100</mn></mrow><annotation encoding=\"application/x-tex\">-100 \\le A, B \\le 100</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.78041em; vertical-align: -0.13597em;\"></span><span class=\"mord\">−</span><span class=\"mord\">1</span><span class=\"mord\">0</span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.87777em; vertical-align: -0.19444em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right: 0.166667em;\"></span><span class=\"mord mathnormal\" style=\"margin-right: 0.05017em;\">B</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.64444em; vertical-align: 0em;\"></span><span class=\"mord\">1</span><span class=\"mord\">0</span><span class=\"mord\">0</span></span></span></span></span>﻿</span> </p><p><br></p><p><br></p><h3><strong>Example 1</strong></h3><pre class=\"ql-syntax\" spellcheck=\"false\">20 10\n200\n</pre><p><br></p><h3><strong>Example 2</strong></h3><pre class=\"ql-syntax\" spellcheck=\"false\">10 10\n<span class=\"hljs-deletion\">100</span>\n</pre><p><br></p><p><br></p><p><br></p>",
+    "supported_languages": [
+        "c",
+        "cpp",
+        "py",
+        "java",
+        "js"
+    ],
+    "test_cases": [
+        {
+            "input": "20 10\n\n",
+            "output": "200\n",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "10 10\n",
+            "output": "100\n",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "20 40\n",
+            "output": "800\n\n",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "0 0\n",
+            "output": "0\n",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "10 0\n",
+            "output": "0\n",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "0 -20\n",
+            "output": "0\n",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-100 100\n",
+            "output": "-10000\n\n",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "100 -100\n",
+            "output": "-10000\n",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-100 -100\n",
+            "output": "10000\n\n",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        }
+    ],
+    "templates": {
+        "c": "#include <stdio.h>\nint main() {\n    // your code goes here\n    return 0;\n}",
+        "cpp": "#include <iostream>\nusing namespace std;\nint main() {\n    // your code goes here\n    return 0;\n}",
+        "py": "# your code goes here\n",
+        "java": "public class Main {\n    public static void main(String[] args) {\n        // your code goes here\n    }\n}",
+        "js": "// your code goes here\n"
+    }
+}
