@@ -2,6 +2,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <algorithm>
 using namespace std;
 
 
@@ -10,17 +11,13 @@ int randInt(int a, int b) {
 }
 
 vector<int> io() {
-    int a = randInt(1000, 9999);
-    return {a};
+    vector<int> v;
+    for (int i = 0; i < 4; i++) {
+        v.push_back(randInt(-100, 100));
+    }
+    return v;
 }
 
-string foo(const vector<int>& v) {
-    int num = v[0];
-    if (num % 400 == 0) return "TRUE";
-    if (num % 4 == 0 && num % 100 != 0) return "TRUE";
-    else if (num % 4 == 0 && num % 100 == 0) return "FALSE";
-    else return "FALSE";
-}
 
 // join a string with a separator
 string join(const vector<int>& v, string sep) {
@@ -34,9 +31,19 @@ string join(const vector<int>& v, string sep) {
     return s;
 }
 
+char str[10];
+char* foo(vector<int>& v) {
+    int x1 = v[0], y1 = v[1];
+    int x2 = v[2], y2 = v[3];
+    double dist = sqrt((x1-x2)*(x1-x2) + (y1-y2)*(y1-y2));
+    sprintf(str, "%lf", dist);
+    return str;
+}
+
+
 int main() {
     srand(time(NULL));
-    for (int i = 0; i < 98; i++) {
+    for (int i = 0; i < 50; i++) {
         auto v = io();
         cout << "{"
             << "\"input\": \""<< join(v, " ") << "\","

@@ -1,0 +1,370 @@
+{
+    "title": "Average Marks",
+    "description": "<h3><strong>Problem Description</strong></h3><p>Write a program to input student's score in five subjects and print the average score.</p><h3><br></h3><h3><strong>Input Format</strong></h3><p>A single line of input containing five space separated integers.</p><p><br></p><h3><strong>Output Format</strong></h3><p>A single line of output containing a single number upto six decimal places.</p><p><br></p><h3><strong>Constraints</strong></h3><p><span class=\"ql-formula\" data-value=\"0 \\le score \\le 100\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>s</mi><mi>c</mi><mi>o</mi><mi>r</mi><mi>e</mi><mo>≤</mo><mn>100</mn></mrow><annotation encoding=\"application/x-tex\">0 \\le score \\le 100</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.78041em; vertical-align: -0.13597em;\"></span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.77194em; vertical-align: -0.13597em;\"></span><span class=\"mord mathnormal\">s</span><span class=\"mord mathnormal\">c</span><span class=\"mord mathnormal\">o</span><span class=\"mord mathnormal\" style=\"margin-right: 0.02778em;\">r</span><span class=\"mord mathnormal\">e</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.64444em; vertical-align: 0em;\"></span><span class=\"mord\">1</span><span class=\"mord\">0</span><span class=\"mord\">0</span></span></span></span></span>﻿</span> </p><p><br></p><h3><strong>Example 1</strong></h3><pre class=\"ql-syntax\" spellcheck=\"false\">57 31 56 43 67\n50.800000\n</pre><p><br></p><h3><strong>Example 2</strong></h3><pre class=\"ql-syntax\" spellcheck=\"false\">93 42 89 49 42\n63.000000\n</pre>",
+    "supported_languages": [
+        "c",
+        "cpp",
+        "py",
+        "java",
+        "js"
+    ],
+    "test_cases": [
+        {
+            "input": "57 31 56 43 67",
+            "output": "50.800000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "93 42 89 49 42",
+            "output": "63.000000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "51 81 22 42 92",
+            "output": "57.600000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "65 80 95 25 25",
+            "output": "58.000000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "54 94 78 40 40",
+            "output": "61.200000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "20 68 56 23 16",
+            "output": "36.600000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "99 26 76 67 35",
+            "output": "60.600000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "7 43 97 63 22",
+            "output": "46.400000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "5 89 78 47 87",
+            "output": "61.200000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "18 65 16 91 62",
+            "output": "50.400000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "78 50 52 16 8",
+            "output": "40.800000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "33 3 91 47 33",
+            "output": "41.400000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "14 83 51 80 8",
+            "output": "47.200000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "41 95 39 44 7",
+            "output": "45.200000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "96 8 66 28 44",
+            "output": "48.400000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "44 75 52 2 46",
+            "output": "43.800000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "31 98 2 68 20",
+            "output": "43.800000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "50 98 30 56 53",
+            "output": "57.400000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "89 10 9 65 32",
+            "output": "41.000000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "22 37 31 51 55",
+            "output": "39.200000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "56 81 7 0 99",
+            "output": "48.600000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "83 79 50 16 43",
+            "output": "54.200000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "85 5 93 53 72",
+            "output": "61.600000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "60 85 52 61 43",
+            "output": "60.200000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "81 5 84 56 39",
+            "output": "53.000000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "70 93 85 52 97",
+            "output": "79.400000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "28 97 36 18 69",
+            "output": "49.600000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "85 77 86 55 82",
+            "output": "77.000000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "26 68 49 76 34",
+            "output": "50.600000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "68 72 98 65 73",
+            "output": "75.200000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "52 47 93 61 13",
+            "output": "53.200000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "34 66 25 58 9",
+            "output": "38.400000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "48 91 7 11 69",
+            "output": "45.200000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "75 56 31 81 65",
+            "output": "61.600000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "92 45 73 69 78",
+            "output": "71.400000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "55 83 44 67 96",
+            "output": "69.000000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "81 79 68 11 87",
+            "output": "65.200000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "48 34 93 94 28",
+            "output": "59.400000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "89 51 11 4 88",
+            "output": "48.600000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "27 66 33 56 72",
+            "output": "50.800000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "60 12 35 24 66",
+            "output": "39.400000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "13 35 81 53 8",
+            "output": "38.000000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "53 42 45 54 62",
+            "output": "51.200000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "65 12 18 21 16",
+            "output": "26.400000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "97 67 4 73 8",
+            "output": "49.800000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "77 72 42 0 96",
+            "output": "57.400000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "62 59 88 64 65",
+            "output": "67.600000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "82 6 40 59 14",
+            "output": "40.200000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "0 78 87 76 47",
+            "output": "57.600000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "81 84 54 51 66",
+            "output": "67.200000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        }
+    ],
+    "templates": {
+        "c": "#include <stdio.h>\nint main() {\n    // your code goes here\n    return 0;\n}",
+        "cpp": "#include <iostream>\nusing namespace std;\nint main() {\n    // your code goes here\n    return 0;\n}",
+        "py": "# your code goes here",
+        "java": "public class Main {\n    public static void main(String[] args) {\n        // your code goes here\n    }\n}",
+        "js": "// your code goes here"
+    }
+}

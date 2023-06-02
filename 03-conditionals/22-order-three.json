@@ -1,0 +1,720 @@
+{
+    "title": "Order Three",
+    "description": "<h3><strong>Problem Description</strong></h3><p>Write a program to input three numbers from user and print them in ascending order.</p><h3><br></h3><h3><strong>Input Format</strong></h3><p>A single line of input containing three space separated integers.</p><p><br></p><h3><strong>Output Format</strong></h3><p>A single line of output containing three space separated integers.</p><p><br></p><h3><strong>Constraints</strong></h3><p><span class=\"ql-formula\" data-value=\"-100 \\le numbers \\le 100\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>100</mn><mo>≤</mo><mi>n</mi><mi>u</mi><mi>m</mi><mi>b</mi><mi>e</mi><mi>r</mi><mi>s</mi><mo>≤</mo><mn>100</mn></mrow><annotation encoding=\"application/x-tex\">-100 \\le numbers \\le 100</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.78041em; vertical-align: -0.13597em;\"></span><span class=\"mord\">−</span><span class=\"mord\">1</span><span class=\"mord\">0</span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.83041em; vertical-align: -0.13597em;\"></span><span class=\"mord mathnormal\">n</span><span class=\"mord mathnormal\">u</span><span class=\"mord mathnormal\">m</span><span class=\"mord mathnormal\">b</span><span class=\"mord mathnormal\">e</span><span class=\"mord mathnormal\" style=\"margin-right: 0.02778em;\">r</span><span class=\"mord mathnormal\">s</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.64444em; vertical-align: 0em;\"></span><span class=\"mord\">1</span><span class=\"mord\">0</span><span class=\"mord\">0</span></span></span></span></span>﻿</span> </p><p><br></p><h3><strong>Example 1</strong></h3><pre class=\"ql-syntax\" spellcheck=\"false\">2 1 0\n0 1 2\n</pre><p><br></p><h3><strong>Example 2</strong></h3><pre class=\"ql-syntax\" spellcheck=\"false\">2 3 1\n1 2 3\n</pre>",
+    "supported_languages": [
+        "c",
+        "cpp",
+        "py",
+        "java",
+        "js"
+    ],
+    "test_cases": [
+        {
+            "input": "2 1 0",
+            "output": "0 1 2",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "2 3 1",
+            "output": "1 2 3",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "-78 -15 8",
+            "output": "-78 -15 8",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "-3 8 25",
+            "output": "-3 8 25",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "90 -66 17",
+            "output": "-66 17 90",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "-24 -15 46",
+            "output": "-24 -15 46",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "-89 -50 -83",
+            "output": "-89 -83 -50",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "12 -16 5",
+            "output": "-16 5 12",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "39 63 42",
+            "output": "39 42 63",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "-8 -28 24",
+            "output": "-28 -8 24",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "74 69 91",
+            "output": "69 74 91",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "95 82 90",
+            "output": "82 90 95",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-58 41 -84",
+            "output": "-84 -58 41",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-37 -60 71",
+            "output": "-60 -37 71",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "27 46 46",
+            "output": "27 46 46",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "78 -45 41",
+            "output": "-45 41 78",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "48 90 24",
+            "output": "24 48 90",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-24 40 -24",
+            "output": "-24 -24 40",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "6 14 87",
+            "output": "6 14 87",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-33 -26 68",
+            "output": "-33 -26 68",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-25 -76 -54",
+            "output": "-76 -54 -25",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-40 73 -71",
+            "output": "-71 -40 73",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-8 88 -86",
+            "output": "-86 -8 88",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "87 41 11",
+            "output": "11 41 87",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "92 21 -28",
+            "output": "-28 21 92",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-53 69 86",
+            "output": "-53 69 86",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "41 22 -9",
+            "output": "-9 22 41",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-22 -8 85",
+            "output": "-22 -8 85",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-23 68 64",
+            "output": "-23 64 68",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-6 -62 -44",
+            "output": "-62 -44 -6",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "77 -11 -71",
+            "output": "-71 -11 77",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "87 -64 -49",
+            "output": "-64 -49 87",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "42 -13 33",
+            "output": "-13 33 42",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "44 -28 96",
+            "output": "-28 44 96",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "26 -27 -9",
+            "output": "-27 -9 26",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-1 -77 30",
+            "output": "-77 -1 30",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "50 88 45",
+            "output": "45 50 88",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "56 -50 -76",
+            "output": "-76 -50 56",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "73 84 15",
+            "output": "15 73 84",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-20 46 -61",
+            "output": "-61 -20 46",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-71 -86 -30",
+            "output": "-86 -71 -30",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "79 -89 33",
+            "output": "-89 33 79",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-79 -8 -81",
+            "output": "-81 -79 -8",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-7 20 47",
+            "output": "-7 20 47",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-20 -75 -65",
+            "output": "-75 -65 -20",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "12 -9 -82",
+            "output": "-82 -9 12",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "3 44 17",
+            "output": "3 17 44",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-64 -1 -4",
+            "output": "-64 -4 -1",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-33 -76 -66",
+            "output": "-76 -66 -33",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-50 -18 -30",
+            "output": "-50 -30 -18",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "6 -3 -1",
+            "output": "-3 -1 6",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-5 7 -1",
+            "output": "-5 -1 7",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-4 4 10",
+            "output": "-4 4 10",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "8 0 7",
+            "output": "0 7 8",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "9 -6 -3",
+            "output": "-6 -3 9",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-9 1 2",
+            "output": "-9 1 2",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-6 -5 -10",
+            "output": "-10 -6 -5",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-3 6 5",
+            "output": "-3 5 6",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-4 -1 5",
+            "output": "-4 -1 5",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-7 0 -4",
+            "output": "-7 -4 0",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "7 5 9",
+            "output": "5 7 9",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-8 -8 3",
+            "output": "-8 -8 3",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-9 10 -5",
+            "output": "-9 -5 10",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-8 1 5",
+            "output": "-8 1 5",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "7 -3 -6",
+            "output": "-6 -3 7",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-2 1 -9",
+            "output": "-9 -2 1",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-4 7 9",
+            "output": "-4 7 9",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-3 -10 7",
+            "output": "-10 -3 7",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-3 -8 -9",
+            "output": "-9 -8 -3",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-8 -3 3",
+            "output": "-8 -3 3",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-6 -8 7",
+            "output": "-8 -6 7",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "2 6 -1",
+            "output": "-1 2 6",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-10 -8 9",
+            "output": "-10 -8 9",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-4 6 -1",
+            "output": "-4 -1 6",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-1 -6 -7",
+            "output": "-7 -6 -1",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "3 -7 6",
+            "output": "-7 3 6",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-6 2 -3",
+            "output": "-6 -3 2",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-6 -2 6",
+            "output": "-6 -2 6",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "5 -2 8",
+            "output": "-2 5 8",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-5 -1 -8",
+            "output": "-8 -5 -1",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-6 7 4",
+            "output": "-6 4 7",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-8 -3 -5",
+            "output": "-8 -5 -3",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-8 -8 -4",
+            "output": "-8 -8 -4",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1 3 -5",
+            "output": "-5 1 3",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-2 -9 -7",
+            "output": "-9 -7 -2",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-8 -7 -2",
+            "output": "-8 -7 -2",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "-9 3 -5",
+            "output": "-9 -5 3",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "4 0 5",
+            "output": "0 4 5",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1 -7 5",
+            "output": "-7 1 5",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "2 5 -9",
+            "output": "-9 2 5",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "2 2 4",
+            "output": "2 2 4",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "5 4 0",
+            "output": "0 4 5",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "4 4 4",
+            "output": "4 4 4",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "3 0 2",
+            "output": "0 2 3",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "5 1 1",
+            "output": "1 1 5",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1 3 4",
+            "output": "1 3 4",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "4 0 0",
+            "output": "0 0 4",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1 5 4",
+            "output": "1 4 5",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "5 1 2",
+            "output": "1 2 5",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "4 3 2",
+            "output": "2 3 4",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        }
+    ],
+    "templates": {
+        "c": "#include <stdio.h>\nint main() {\n    // your code goes here\n    return 0;\n}",
+        "cpp": "#include <iostream>\nusing namespace std;\nint main() {\n    // your code goes here\n    return 0;\n}",
+        "py": "# your code goes here",
+        "java": "public class Main {\n    public static void main(String[] args) {\n        // your code goes here\n    }\n}",
+        "js": "// your code goes here"
+    }
+}
