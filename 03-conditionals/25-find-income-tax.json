@@ -1,0 +1,720 @@
+{
+    "title": "Find the Income Tax",
+    "description": "<h3><strong>Problem Description</strong></h3><p>Write a program to input total income of a person and compute the tax based on following slabs:</p><p><span class=\"ql-formula\" data-value=\"0 \\le income \\le 2,50,000 \\implies 0\\%\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>i</mi><mi>n</mi><mi>c</mi><mi>o</mi><mi>m</mi><mi>e</mi><mo>≤</mo><mn>2</mn><mo separator=\"true\">,</mo><mn>50</mn><mo separator=\"true\">,</mo><mn>000</mn>  <mo>⟹</mo>  <mn>0</mn><mi mathvariant=\"normal\">%</mi></mrow><annotation encoding=\"application/x-tex\">0 \\le income \\le 2,50,000 \\implies 0\\%</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.78041em; vertical-align: -0.13597em;\"></span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.79549em; vertical-align: -0.13597em;\"></span><span class=\"mord mathnormal\">i</span><span class=\"mord mathnormal\">n</span><span class=\"mord mathnormal\">c</span><span class=\"mord mathnormal\">o</span><span class=\"mord mathnormal\">m</span><span class=\"mord mathnormal\">e</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.83888em; vertical-align: -0.19444em;\"></span><span class=\"mord\">2</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right: 0.166667em;\"></span><span class=\"mord\">5</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right: 0.166667em;\"></span><span class=\"mord\">0</span><span class=\"mord\">0</span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">⟹</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.80556em; vertical-align: -0.05556em;\"></span><span class=\"mord\">0</span><span class=\"mord\">%</span></span></span></span></span>﻿</span> tax</p><p><span class=\"ql-formula\" data-value=\"2,50,000 \\lt income \\le 5,00,000 \\implies 5\\%\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo separator=\"true\">,</mo><mn>50</mn><mo separator=\"true\">,</mo><mn>000</mn><mo>&lt;</mo><mi>i</mi><mi>n</mi><mi>c</mi><mi>o</mi><mi>m</mi><mi>e</mi><mo>≤</mo><mn>5</mn><mo separator=\"true\">,</mo><mn>00</mn><mo separator=\"true\">,</mo><mn>000</mn>  <mo>⟹</mo>  <mn>5</mn><mi mathvariant=\"normal\">%</mi></mrow><annotation encoding=\"application/x-tex\">2,50,000 \\lt income \\le 5,00,000 \\implies 5\\%</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.83888em; vertical-align: -0.19444em;\"></span><span class=\"mord\">2</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right: 0.166667em;\"></span><span class=\"mord\">5</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right: 0.166667em;\"></span><span class=\"mord\">0</span><span class=\"mord\">0</span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">&lt;</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.79549em; vertical-align: -0.13597em;\"></span><span class=\"mord mathnormal\">i</span><span class=\"mord mathnormal\">n</span><span class=\"mord mathnormal\">c</span><span class=\"mord mathnormal\">o</span><span class=\"mord mathnormal\">m</span><span class=\"mord mathnormal\">e</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.83888em; vertical-align: -0.19444em;\"></span><span class=\"mord\">5</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right: 0.166667em;\"></span><span class=\"mord\">0</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right: 0.166667em;\"></span><span class=\"mord\">0</span><span class=\"mord\">0</span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">⟹</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.80556em; vertical-align: -0.05556em;\"></span><span class=\"mord\">5</span><span class=\"mord\">%</span></span></span></span></span>﻿</span> tax on income more than 2,50,000</p><p><span class=\"ql-formula\" data-value=\"5,00,000 \\lt income \\le 7,50,000 \\implies 10\\%\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><mo separator=\"true\">,</mo><mn>00</mn><mo separator=\"true\">,</mo><mn>000</mn><mo>&lt;</mo><mi>i</mi><mi>n</mi><mi>c</mi><mi>o</mi><mi>m</mi><mi>e</mi><mo>≤</mo><mn>7</mn><mo separator=\"true\">,</mo><mn>50</mn><mo separator=\"true\">,</mo><mn>000</mn>  <mo>⟹</mo>  <mn>10</mn><mi mathvariant=\"normal\">%</mi></mrow><annotation encoding=\"application/x-tex\">5,00,000 \\lt income \\le 7,50,000 \\implies 10\\%</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.83888em; vertical-align: -0.19444em;\"></span><span class=\"mord\">5</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right: 0.166667em;\"></span><span class=\"mord\">0</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right: 0.166667em;\"></span><span class=\"mord\">0</span><span class=\"mord\">0</span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">&lt;</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.79549em; vertical-align: -0.13597em;\"></span><span class=\"mord mathnormal\">i</span><span class=\"mord mathnormal\">n</span><span class=\"mord mathnormal\">c</span><span class=\"mord mathnormal\">o</span><span class=\"mord mathnormal\">m</span><span class=\"mord mathnormal\">e</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.83888em; vertical-align: -0.19444em;\"></span><span class=\"mord\">7</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right: 0.166667em;\"></span><span class=\"mord\">5</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right: 0.166667em;\"></span><span class=\"mord\">0</span><span class=\"mord\">0</span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">⟹</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.80556em; vertical-align: -0.05556em;\"></span><span class=\"mord\">1</span><span class=\"mord\">0</span><span class=\"mord\">%</span></span></span></span></span>﻿</span> tax on income more than 5,00,000</p><p><span class=\"ql-formula\" data-value=\"7,50,000 \\lt income \\le 10,00,000 \\implies 15\\%\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>7</mn><mo separator=\"true\">,</mo><mn>50</mn><mo separator=\"true\">,</mo><mn>000</mn><mo>&lt;</mo><mi>i</mi><mi>n</mi><mi>c</mi><mi>o</mi><mi>m</mi><mi>e</mi><mo>≤</mo><mn>10</mn><mo separator=\"true\">,</mo><mn>00</mn><mo separator=\"true\">,</mo><mn>000</mn>  <mo>⟹</mo>  <mn>15</mn><mi mathvariant=\"normal\">%</mi></mrow><annotation encoding=\"application/x-tex\">7,50,000 \\lt income \\le 10,00,000 \\implies 15\\%</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.83888em; vertical-align: -0.19444em;\"></span><span class=\"mord\">7</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right: 0.166667em;\"></span><span class=\"mord\">5</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right: 0.166667em;\"></span><span class=\"mord\">0</span><span class=\"mord\">0</span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">&lt;</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.79549em; vertical-align: -0.13597em;\"></span><span class=\"mord mathnormal\">i</span><span class=\"mord mathnormal\">n</span><span class=\"mord mathnormal\">c</span><span class=\"mord mathnormal\">o</span><span class=\"mord mathnormal\">m</span><span class=\"mord mathnormal\">e</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.83888em; vertical-align: -0.19444em;\"></span><span class=\"mord\">1</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right: 0.166667em;\"></span><span class=\"mord\">0</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right: 0.166667em;\"></span><span class=\"mord\">0</span><span class=\"mord\">0</span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">⟹</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.80556em; vertical-align: -0.05556em;\"></span><span class=\"mord\">1</span><span class=\"mord\">5</span><span class=\"mord\">%</span></span></span></span></span>﻿</span> tax on income more than 7,50,000</p><p><span class=\"ql-formula\" data-value=\"10,00,000 \\lt income \\implies 30\\%\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>10</mn><mo separator=\"true\">,</mo><mn>00</mn><mo separator=\"true\">,</mo><mn>000</mn><mo>&lt;</mo><mi>i</mi><mi>n</mi><mi>c</mi><mi>o</mi><mi>m</mi><mi>e</mi>  <mo>⟹</mo>  <mn>30</mn><mi mathvariant=\"normal\">%</mi></mrow><annotation encoding=\"application/x-tex\">10,00,000 \\lt income \\implies 30\\%</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.83888em; vertical-align: -0.19444em;\"></span><span class=\"mord\">1</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right: 0.166667em;\"></span><span class=\"mord\">0</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right: 0.166667em;\"></span><span class=\"mord\">0</span><span class=\"mord\">0</span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">&lt;</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.68352em; vertical-align: -0.024em;\"></span><span class=\"mord mathnormal\">i</span><span class=\"mord mathnormal\">n</span><span class=\"mord mathnormal\">c</span><span class=\"mord mathnormal\">o</span><span class=\"mord mathnormal\">m</span><span class=\"mord mathnormal\">e</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">⟹</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.80556em; vertical-align: -0.05556em;\"></span><span class=\"mord\">3</span><span class=\"mord\">0</span><span class=\"mord\">%</span></span></span></span></span>﻿</span> tax on income more than 10,00,000</p><p><br></p><p><br></p><h3><strong>Input Format</strong></h3><p>A single line of input containing income of person.</p><p><br></p><h3><strong>Output Format</strong></h3><p>A single line of output containing income tax upto six decimal places.</p><p><br></p><h3><strong>Constraints</strong></h3><p><span class=\"ql-formula\" data-value=\"0 \\le income \\le 50,00,000\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>i</mi><mi>n</mi><mi>c</mi><mi>o</mi><mi>m</mi><mi>e</mi><mo>≤</mo><mn>50</mn><mo separator=\"true\">,</mo><mn>00</mn><mo separator=\"true\">,</mo><mn>000</mn></mrow><annotation encoding=\"application/x-tex\">0 \\le income \\le 50,00,000</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.78041em; vertical-align: -0.13597em;\"></span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.79549em; vertical-align: -0.13597em;\"></span><span class=\"mord mathnormal\">i</span><span class=\"mord mathnormal\">n</span><span class=\"mord mathnormal\">c</span><span class=\"mord mathnormal\">o</span><span class=\"mord mathnormal\">m</span><span class=\"mord mathnormal\">e</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.83888em; vertical-align: -0.19444em;\"></span><span class=\"mord\">5</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right: 0.166667em;\"></span><span class=\"mord\">0</span><span class=\"mord\">0</span><span class=\"mpunct\">,</span><span class=\"mspace\" style=\"margin-right: 0.166667em;\"></span><span class=\"mord\">0</span><span class=\"mord\">0</span><span class=\"mord\">0</span></span></span></span></span>﻿</span> </p><p><br></p><p><br></p><h3><strong>Example 1</strong></h3><pre class=\"ql-syntax\" spellcheck=\"false\">1500000\n225000.000000\n</pre><p>Total income is 15,00,000</p><p>5% income tax on income more than 2,50,000 = 0.05 * 2,50,000 = 12,500</p><p>10% income tax on income more than 5,00,000 but less than 7,50,000 = 0.10 * 2,50,000 = 25,000</p><p>15% income tax on income more than 7,50,000 but less than 10,00,000 = 0.15 * 2,50,000 = 37,500</p><p>30% income tax on income more than 10,00,000 = 0.30 * 5,00,000 = 1,50,000</p><p>Total income tax = 12,500 + 25,000 + 37,500 + 1,50,000 = 2,25,000</p><p><br></p><h3><strong>Example 2</strong></h3><pre class=\"ql-syntax\" spellcheck=\"false\">900000\n60000.000000\n</pre><p>Total income is 9,00,000</p><p>5% income tax on income more than 2,50,000 = 0.05 * 2,50,000 = 12,500</p><p>10% income tax on income more than 5,00,000 but less than 7,50,000 = 0.10 * 2,50,000 = 25,000</p><p>15% income tax on income more than 7,50,000 but less than 10,00,000 = 0.15 * 1,50,000 = 22,500</p><p>Total income tax = 12,500 + 25,000 + 22,500 = 60,000﻿</p>",
+    "supported_languages": [
+        "c",
+        "cpp",
+        "py",
+        "java",
+        "js"
+    ],
+    "test_cases": [
+        {
+            "input": "1500000",
+            "output": "225000.000000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "900000",
+            "output": "60000.000000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "786945",
+            "output": "43041.750000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "4066371",
+            "output": "994911.300000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "3974951",
+            "output": "967485.300000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "2718596",
+            "output": "590578.800000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "3973705",
+            "output": "967111.500000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "4186654",
+            "output": "1030996.200000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "2716898",
+            "output": "590069.400000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "570455",
+            "output": "19545.500000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "1454931",
+            "output": "211479.300000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "95123",
+            "output": "0.000000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "2916676",
+            "output": "650002.800000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "3299661",
+            "output": "764898.300000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "4495633",
+            "output": "1123689.900000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "863545",
+            "output": "54531.750000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "725118",
+            "output": "35011.800000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "801631",
+            "output": "45244.650000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "4584889",
+            "output": "1150466.700000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1748992",
+            "output": "299697.600000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "3692317",
+            "output": "882695.100000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "3734594",
+            "output": "895378.200000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1724171",
+            "output": "292251.300000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1228504",
+            "output": "143551.200000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "4623191",
+            "output": "1161957.300000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "4509676",
+            "output": "1127902.800000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "397454",
+            "output": "7372.700000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "550589",
+            "output": "17558.900000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "4038489",
+            "output": "986546.700000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "570764",
+            "output": "19576.400000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "428113",
+            "output": "8905.650000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "269067",
+            "output": "953.350000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "4044534",
+            "output": "988360.200000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "338789",
+            "output": "4439.450000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "2035957",
+            "output": "385787.100000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1062119",
+            "output": "93635.700000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "3218879",
+            "output": "740663.700000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "4276048",
+            "output": "1057814.400000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1531800",
+            "output": "234540.000000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1857398",
+            "output": "332219.400000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "3825933",
+            "output": "922779.900000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "3201216",
+            "output": "735364.800000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "522407",
+            "output": "14740.700000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "4491663",
+            "output": "1122498.900000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "2309499",
+            "output": "467849.700000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "3677477",
+            "output": "878243.100000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "2353821",
+            "output": "481146.300000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "415198",
+            "output": "8259.900000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "9330",
+            "output": "0.000000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "3936898",
+            "output": "956069.400000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "957732",
+            "output": "68659.800000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "2103935",
+            "output": "406180.500000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "2988652",
+            "output": "671595.600000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "2377708",
+            "output": "488312.400000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "3965370",
+            "output": "964611.000000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "590220",
+            "output": "21522.000000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "2749855",
+            "output": "599956.500000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1146237",
+            "output": "118871.100000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "3255820",
+            "output": "751746.000000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1007712",
+            "output": "77313.600000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "615311",
+            "output": "24031.100000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1106588",
+            "output": "106976.400000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "149366",
+            "output": "0.000000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "2316124",
+            "output": "469837.200000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "2436544",
+            "output": "505963.200000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "2079842",
+            "output": "398952.600000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "4440180",
+            "output": "1107054.000000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "888532",
+            "output": "58279.800000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1990578",
+            "output": "372173.400000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1427689",
+            "output": "203306.700000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "2671122",
+            "output": "576336.600000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1807896",
+            "output": "317368.800000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "2888276",
+            "output": "641482.800000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1575654",
+            "output": "247696.200000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1455856",
+            "output": "211756.800000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1475392",
+            "output": "217617.600000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1573506",
+            "output": "247051.800000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "4906835",
+            "output": "1247050.500000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "2997780",
+            "output": "674334.000000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "4765075",
+            "output": "1204522.500000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "4334436",
+            "output": "1075330.800000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "151795",
+            "output": "0.000000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1638182",
+            "output": "266454.600000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "935068",
+            "output": "65260.200000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "2931399",
+            "output": "654419.700000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "3741093",
+            "output": "897327.900000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "2516368",
+            "output": "529910.400000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "2924347",
+            "output": "652304.100000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "3403275",
+            "output": "795982.500000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1426054",
+            "output": "202816.200000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "4805479",
+            "output": "1216643.700000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "3701498",
+            "output": "885449.400000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "3858214",
+            "output": "932464.200000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "732482",
+            "output": "35748.200000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "4672602",
+            "output": "1176780.600000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1940521",
+            "output": "357156.300000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1710850",
+            "output": "288255.000000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "539877",
+            "output": "16487.700000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "163870",
+            "output": "0.000000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "2393659",
+            "output": "493097.700000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        }
+    ],
+    "templates": {
+        "c": "#include <stdio.h>\nint main() {\n    // your code goes here\n    return 0;\n}",
+        "cpp": "#include <iostream>\nusing namespace std;\nint main() {\n    // your code goes here\n    return 0;\n}",
+        "py": "# your code goes here",
+        "java": "public class Main {\n    public static void main(String[] args) {\n        // your code goes here\n    }\n}",
+        "js": "// your code goes here"
+    }
+}

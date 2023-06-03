@@ -1,0 +1,370 @@
+{
+    "title": "Find the bill amount",
+    "description": "<h3><strong>Problem Description</strong></h3><p>Write a program to input two integers namely <em>membership, amount</em> from user and compute the net pay after discount as per following conditions:</p><p><em>Assumption:</em> If membership is 1 then user is prime; otherwise user is non-prime.</p><p><br></p><p>If user is a prime member then:</p><p>\tIf <span class=\"ql-formula\" data-value=\"amount \\ge 1000\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mi>m</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>t</mi><mo>≥</mo><mn>1000</mn></mrow><annotation encoding=\"application/x-tex\">amount \\ge 1000</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.77194em; vertical-align: -0.13597em;\"></span><span class=\"mord mathnormal\">a</span><span class=\"mord mathnormal\">m</span><span class=\"mord mathnormal\">o</span><span class=\"mord mathnormal\">u</span><span class=\"mord mathnormal\">n</span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≥</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.64444em; vertical-align: 0em;\"></span><span class=\"mord\">1</span><span class=\"mord\">0</span><span class=\"mord\">0</span><span class=\"mord\">0</span></span></span></span></span>﻿</span> ; <span class=\"ql-formula\" data-value=\"10\\% \">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>10</mn><mi mathvariant=\"normal\">%</mi></mrow><annotation encoding=\"application/x-tex\">10\\% </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.80556em; vertical-align: -0.05556em;\"></span><span class=\"mord\">1</span><span class=\"mord\">0</span><span class=\"mord\">%</span></span></span></span></span>﻿</span> discount</p><p>\tIf <span class=\"ql-formula\" data-value=\"amount \\ge 500\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mi>m</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>t</mi><mo>≥</mo><mn>500</mn></mrow><annotation encoding=\"application/x-tex\">amount \\ge 500</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.77194em; vertical-align: -0.13597em;\"></span><span class=\"mord mathnormal\">a</span><span class=\"mord mathnormal\">m</span><span class=\"mord mathnormal\">o</span><span class=\"mord mathnormal\">u</span><span class=\"mord mathnormal\">n</span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≥</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.64444em; vertical-align: 0em;\"></span><span class=\"mord\">5</span><span class=\"mord\">0</span><span class=\"mord\">0</span></span></span></span></span>﻿</span> ; <span class=\"ql-formula\" data-value=\"5\\%\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><mi mathvariant=\"normal\">%</mi></mrow><annotation encoding=\"application/x-tex\">5\\%</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.80556em; vertical-align: -0.05556em;\"></span><span class=\"mord\">5</span><span class=\"mord\">%</span></span></span></span></span>﻿</span> discount</p><p>\tOtherwise <span class=\"ql-formula\" data-value=\"3\\%\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mi mathvariant=\"normal\">%</mi></mrow><annotation encoding=\"application/x-tex\">3\\%</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.80556em; vertical-align: -0.05556em;\"></span><span class=\"mord\">3</span><span class=\"mord\">%</span></span></span></span></span>﻿</span> discount</p><p><br></p><p>If user is not a prime member then</p><p>&nbsp;\tIf <span class=\"ql-formula\" data-value=\"amount \\ge 1000\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mi>m</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>t</mi><mo>≥</mo><mn>1000</mn></mrow><annotation encoding=\"application/x-tex\">amount \\ge 1000</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.77194em; vertical-align: -0.13597em;\"></span><span class=\"mord mathnormal\">a</span><span class=\"mord mathnormal\">m</span><span class=\"mord mathnormal\">o</span><span class=\"mord mathnormal\">u</span><span class=\"mord mathnormal\">n</span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≥</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.64444em; vertical-align: 0em;\"></span><span class=\"mord\">1</span><span class=\"mord\">0</span><span class=\"mord\">0</span><span class=\"mord\">0</span></span></span></span></span>﻿</span> ; <span class=\"ql-formula\" data-value=\"5\\%\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><mi mathvariant=\"normal\">%</mi></mrow><annotation encoding=\"application/x-tex\">5\\%</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.80556em; vertical-align: -0.05556em;\"></span><span class=\"mord\">5</span><span class=\"mord\">%</span></span></span></span></span>﻿</span>  discount</p><p>\tIf <span class=\"ql-formula\" data-value=\"amount \\ge 500\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mi>m</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>t</mi><mo>≥</mo><mn>500</mn></mrow><annotation encoding=\"application/x-tex\">amount \\ge 500</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.77194em; vertical-align: -0.13597em;\"></span><span class=\"mord mathnormal\">a</span><span class=\"mord mathnormal\">m</span><span class=\"mord mathnormal\">o</span><span class=\"mord mathnormal\">u</span><span class=\"mord mathnormal\">n</span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≥</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.64444em; vertical-align: 0em;\"></span><span class=\"mord\">5</span><span class=\"mord\">0</span><span class=\"mord\">0</span></span></span></span></span>﻿</span> ; <span class=\"ql-formula\" data-value=\"3\\%\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mi mathvariant=\"normal\">%</mi></mrow><annotation encoding=\"application/x-tex\">3\\%</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.80556em; vertical-align: -0.05556em;\"></span><span class=\"mord\">3</span><span class=\"mord\">%</span></span></span></span></span>﻿</span> <span class=\"ql-formula\" data-value=\"5\\%\">﻿﻿</span> discount</p><p>\tOtherwise  no discount</p><p><br></p><p><br></p><h3><strong>Input Format</strong></h3><p>A single line of input containing two integers <em>membership</em> and <em>amount </em>respectively.</p><p><br></p><h3><strong>Output Format</strong></h3><p>A single line of output containing net bill of user after discount.</p><p><br></p><h3><strong>Constraints</strong></h3><p><span class=\"ql-formula\" data-value=\"0 \\le amount \\le 2000\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>a</mi><mi>m</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>t</mi><mo>≤</mo><mn>2000</mn></mrow><annotation encoding=\"application/x-tex\">0 \\le amount \\le 2000</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.78041em; vertical-align: -0.13597em;\"></span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.77194em; vertical-align: -0.13597em;\"></span><span class=\"mord mathnormal\">a</span><span class=\"mord mathnormal\">m</span><span class=\"mord mathnormal\">o</span><span class=\"mord mathnormal\">u</span><span class=\"mord mathnormal\">n</span><span class=\"mord mathnormal\">t</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.64444em; vertical-align: 0em;\"></span><span class=\"mord\">2</span><span class=\"mord\">0</span><span class=\"mord\">0</span><span class=\"mord\">0</span></span></span></span></span>﻿</span> </p><p><span class=\"ql-formula\" data-value=\"0 \\le membership \\le 1\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>m</mi><mi>e</mi><mi>m</mi><mi>b</mi><mi>e</mi><mi>r</mi><mi>s</mi><mi>h</mi><mi>i</mi><mi>p</mi><mo>≤</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">0 \\le membership \\le 1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.78041em; vertical-align: -0.13597em;\"></span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.88888em; vertical-align: -0.19444em;\"></span><span class=\"mord mathnormal\">m</span><span class=\"mord mathnormal\">e</span><span class=\"mord mathnormal\">m</span><span class=\"mord mathnormal\">b</span><span class=\"mord mathnormal\">e</span><span class=\"mord mathnormal\" style=\"margin-right: 0.02778em;\">r</span><span class=\"mord mathnormal\">s</span><span class=\"mord mathnormal\">h</span><span class=\"mord mathnormal\">i</span><span class=\"mord mathnormal\">p</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.64444em; vertical-align: 0em;\"></span><span class=\"mord\">1</span></span></span></span></span>﻿</span> </p><p><br></p><p><br></p><h3><strong>Example 1</strong></h3><pre class=\"ql-syntax\" spellcheck=\"false\"><span class=\"hljs-number\">1</span> <span class=\"hljs-number\">1922</span>\n<span class=\"hljs-number\">1729.800000</span>\n</pre><p>User is prime with bill amount 1922 so they get 10% discount</p><p>Net pay = 1922 * 0.90 = 1729.8</p><p><br></p><h3><strong>Example 2</strong></h3><pre class=\"ql-syntax\" spellcheck=\"false\"><span class=\"hljs-number\">0</span> <span class=\"hljs-number\">1260</span>\n<span class=\"hljs-number\">1197.000000</span>\n</pre><p>User is non-prime with bill amount 1260 so they get 5% discount</p><p>Net pay = 1260 * 0.95 = 1197</p>",
+    "supported_languages": [
+        "c",
+        "cpp",
+        "py",
+        "java",
+        "js"
+    ],
+    "test_cases": [
+        {
+            "input": "1 1922",
+            "output": "1729.800000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "0 1260",
+            "output": "1197.000000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "0 877",
+            "output": "850.690000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "1 919",
+            "output": "873.050000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "0 825",
+            "output": "800.250000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "0 1582",
+            "output": "1502.900000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "0 1263",
+            "output": "1199.850000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "0 48",
+            "output": "48.000000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "0 503",
+            "output": "487.910000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "0 510",
+            "output": "494.700000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "0 373",
+            "output": "373.000000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "0 1206",
+            "output": "1145.700000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1 17",
+            "output": "16.490000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "0 645",
+            "output": "625.650000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1 1075",
+            "output": "967.500000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1 454",
+            "output": "440.380000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1 360",
+            "output": "349.200000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "0 1289",
+            "output": "1224.550000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "0 15",
+            "output": "15.000000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "0 1143",
+            "output": "1085.850000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "0 1020",
+            "output": "969.000000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1 1497",
+            "output": "1347.300000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1 1974",
+            "output": "1776.600000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "0 518",
+            "output": "502.460000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "0 1525",
+            "output": "1448.750000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1 1905",
+            "output": "1714.500000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "0 1737",
+            "output": "1650.150000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1 674",
+            "output": "640.300000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1 1834",
+            "output": "1650.600000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "0 1616",
+            "output": "1535.200000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "0 58",
+            "output": "58.000000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1 1557",
+            "output": "1401.300000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "0 1075",
+            "output": "1021.250000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "0 1186",
+            "output": "1126.700000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1 426",
+            "output": "413.220000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "0 843",
+            "output": "817.710000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "0 1335",
+            "output": "1268.250000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "0 1478",
+            "output": "1404.100000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1 619",
+            "output": "588.050000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "0 483",
+            "output": "483.000000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "0 930",
+            "output": "902.100000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "0 437",
+            "output": "437.000000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "0 1086",
+            "output": "1031.700000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "0 250",
+            "output": "250.000000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1 1892",
+            "output": "1702.800000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1 1183",
+            "output": "1064.700000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1 455",
+            "output": "441.350000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "0 640",
+            "output": "620.800000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "0 1806",
+            "output": "1715.700000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "1 1172",
+            "output": "1054.800000",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        }
+    ],
+    "templates": {
+        "c": "#include <stdio.h>\nint main() {\n    // your code goes here\n    return 0;\n}",
+        "cpp": "#include <iostream>\nusing namespace std;\nint main() {\n    // your code goes here\n    return 0;\n}",
+        "py": "# your code goes here",
+        "java": "public class Main {\n    public static void main(String[] args) {\n        // your code goes here\n    }\n}",
+        "js": "// your code goes here"
+    }
+}

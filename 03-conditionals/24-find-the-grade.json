@@ -1,0 +1,440 @@
+{
+    "title": "Find the grade",
+    "description": "<h3><strong>Problem Description</strong></h3><p>Write a program to input marks of students in five subjects and find their grade based on the following constraints:</p><p><span class=\"ql-formula\" data-value=\"91\\% \\le percentage \\le 100\\% \\implies A\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>91</mn><mi mathvariant=\"normal\">%</mi><mo>≤</mo><mi>p</mi><mi>e</mi><mi>r</mi><mi>c</mi><mi>e</mi><mi>n</mi><mi>t</mi><mi>a</mi><mi>g</mi><mi>e</mi><mo>≤</mo><mn>100</mn><mi mathvariant=\"normal\">%</mi>  <mo>⟹</mo>  <mi>A</mi></mrow><annotation encoding=\"application/x-tex\">91\\% \\le percentage \\le 100\\% \\implies A</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.88597em; vertical-align: -0.13597em;\"></span><span class=\"mord\">9</span><span class=\"mord\">1</span><span class=\"mord\">%</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.83041em; vertical-align: -0.19444em;\"></span><span class=\"mord mathnormal\">p</span><span class=\"mord mathnormal\">e</span><span class=\"mord mathnormal\" style=\"margin-right: 0.02778em;\">r</span><span class=\"mord mathnormal\">c</span><span class=\"mord mathnormal\">e</span><span class=\"mord mathnormal\">n</span><span class=\"mord mathnormal\">t</span><span class=\"mord mathnormal\">a</span><span class=\"mord mathnormal\" style=\"margin-right: 0.03588em;\">g</span><span class=\"mord mathnormal\">e</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.80556em; vertical-align: -0.05556em;\"></span><span class=\"mord\">1</span><span class=\"mord\">0</span><span class=\"mord\">0</span><span class=\"mord\">%</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">⟹</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.68333em; vertical-align: 0em;\"></span><span class=\"mord mathnormal\">A</span></span></span></span></span>﻿</span> </p><p><span class=\"ql-formula\" data-value=\"81\\% \\le percentage \\le 90\\% \\implies B\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>81</mn><mi mathvariant=\"normal\">%</mi><mo>≤</mo><mi>p</mi><mi>e</mi><mi>r</mi><mi>c</mi><mi>e</mi><mi>n</mi><mi>t</mi><mi>a</mi><mi>g</mi><mi>e</mi><mo>≤</mo><mn>90</mn><mi mathvariant=\"normal\">%</mi>  <mo>⟹</mo>  <mi>B</mi></mrow><annotation encoding=\"application/x-tex\">81\\% \\le percentage \\le 90\\% \\implies B</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.88597em; vertical-align: -0.13597em;\"></span><span class=\"mord\">8</span><span class=\"mord\">1</span><span class=\"mord\">%</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.83041em; vertical-align: -0.19444em;\"></span><span class=\"mord mathnormal\">p</span><span class=\"mord mathnormal\">e</span><span class=\"mord mathnormal\" style=\"margin-right: 0.02778em;\">r</span><span class=\"mord mathnormal\">c</span><span class=\"mord mathnormal\">e</span><span class=\"mord mathnormal\">n</span><span class=\"mord mathnormal\">t</span><span class=\"mord mathnormal\">a</span><span class=\"mord mathnormal\" style=\"margin-right: 0.03588em;\">g</span><span class=\"mord mathnormal\">e</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.80556em; vertical-align: -0.05556em;\"></span><span class=\"mord\">9</span><span class=\"mord\">0</span><span class=\"mord\">%</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">⟹</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.68333em; vertical-align: 0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right: 0.05017em;\">B</span></span></span></span></span>﻿</span> </p><p><span class=\"ql-formula\" data-value=\"71\\% \\le percentage \\le 80\\% \\implies C\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>71</mn><mi mathvariant=\"normal\">%</mi><mo>≤</mo><mi>p</mi><mi>e</mi><mi>r</mi><mi>c</mi><mi>e</mi><mi>n</mi><mi>t</mi><mi>a</mi><mi>g</mi><mi>e</mi><mo>≤</mo><mn>80</mn><mi mathvariant=\"normal\">%</mi>  <mo>⟹</mo>  <mi>C</mi></mrow><annotation encoding=\"application/x-tex\">71\\% \\le percentage \\le 80\\% \\implies C</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.88597em; vertical-align: -0.13597em;\"></span><span class=\"mord\">7</span><span class=\"mord\">1</span><span class=\"mord\">%</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.83041em; vertical-align: -0.19444em;\"></span><span class=\"mord mathnormal\">p</span><span class=\"mord mathnormal\">e</span><span class=\"mord mathnormal\" style=\"margin-right: 0.02778em;\">r</span><span class=\"mord mathnormal\">c</span><span class=\"mord mathnormal\">e</span><span class=\"mord mathnormal\">n</span><span class=\"mord mathnormal\">t</span><span class=\"mord mathnormal\">a</span><span class=\"mord mathnormal\" style=\"margin-right: 0.03588em;\">g</span><span class=\"mord mathnormal\">e</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.80556em; vertical-align: -0.05556em;\"></span><span class=\"mord\">8</span><span class=\"mord\">0</span><span class=\"mord\">%</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">⟹</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.68333em; vertical-align: 0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right: 0.07153em;\">C</span></span></span></span></span>﻿</span> </p><p><span class=\"ql-formula\" data-value=\"61\\% \\le percentage \\le 70\\% \\implies D\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>61</mn><mi mathvariant=\"normal\">%</mi><mo>≤</mo><mi>p</mi><mi>e</mi><mi>r</mi><mi>c</mi><mi>e</mi><mi>n</mi><mi>t</mi><mi>a</mi><mi>g</mi><mi>e</mi><mo>≤</mo><mn>70</mn><mi mathvariant=\"normal\">%</mi>  <mo>⟹</mo>  <mi>D</mi></mrow><annotation encoding=\"application/x-tex\">61\\% \\le percentage \\le 70\\% \\implies D</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.88597em; vertical-align: -0.13597em;\"></span><span class=\"mord\">6</span><span class=\"mord\">1</span><span class=\"mord\">%</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.83041em; vertical-align: -0.19444em;\"></span><span class=\"mord mathnormal\">p</span><span class=\"mord mathnormal\">e</span><span class=\"mord mathnormal\" style=\"margin-right: 0.02778em;\">r</span><span class=\"mord mathnormal\">c</span><span class=\"mord mathnormal\">e</span><span class=\"mord mathnormal\">n</span><span class=\"mord mathnormal\">t</span><span class=\"mord mathnormal\">a</span><span class=\"mord mathnormal\" style=\"margin-right: 0.03588em;\">g</span><span class=\"mord mathnormal\">e</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.80556em; vertical-align: -0.05556em;\"></span><span class=\"mord\">7</span><span class=\"mord\">0</span><span class=\"mord\">%</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">⟹</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.68333em; vertical-align: 0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right: 0.02778em;\">D</span></span></span></span></span>﻿</span> </p><p><span class=\"ql-formula\" data-value=\"51\\% \\le percentage \\le 60\\% \\implies E\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>51</mn><mi mathvariant=\"normal\">%</mi><mo>≤</mo><mi>p</mi><mi>e</mi><mi>r</mi><mi>c</mi><mi>e</mi><mi>n</mi><mi>t</mi><mi>a</mi><mi>g</mi><mi>e</mi><mo>≤</mo><mn>60</mn><mi mathvariant=\"normal\">%</mi>  <mo>⟹</mo>  <mi>E</mi></mrow><annotation encoding=\"application/x-tex\">51\\% \\le percentage \\le 60\\% \\implies E</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.88597em; vertical-align: -0.13597em;\"></span><span class=\"mord\">5</span><span class=\"mord\">1</span><span class=\"mord\">%</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.83041em; vertical-align: -0.19444em;\"></span><span class=\"mord mathnormal\">p</span><span class=\"mord mathnormal\">e</span><span class=\"mord mathnormal\" style=\"margin-right: 0.02778em;\">r</span><span class=\"mord mathnormal\">c</span><span class=\"mord mathnormal\">e</span><span class=\"mord mathnormal\">n</span><span class=\"mord mathnormal\">t</span><span class=\"mord mathnormal\">a</span><span class=\"mord mathnormal\" style=\"margin-right: 0.03588em;\">g</span><span class=\"mord mathnormal\">e</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.80556em; vertical-align: -0.05556em;\"></span><span class=\"mord\">6</span><span class=\"mord\">0</span><span class=\"mord\">%</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">⟹</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.68333em; vertical-align: 0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right: 0.05764em;\">E</span></span></span></span></span>﻿</span> </p><p><span class=\"ql-formula\" data-value=\"0\\% \\le percentage \\le 50\\% \\implies F\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mi mathvariant=\"normal\">%</mi><mo>≤</mo><mi>p</mi><mi>e</mi><mi>r</mi><mi>c</mi><mi>e</mi><mi>n</mi><mi>t</mi><mi>a</mi><mi>g</mi><mi>e</mi><mo>≤</mo><mn>50</mn><mi mathvariant=\"normal\">%</mi>  <mo>⟹</mo>  <mi>F</mi></mrow><annotation encoding=\"application/x-tex\">0\\% \\le percentage \\le 50\\% \\implies F</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.88597em; vertical-align: -0.13597em;\"></span><span class=\"mord\">0</span><span class=\"mord\">%</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.83041em; vertical-align: -0.19444em;\"></span><span class=\"mord mathnormal\">p</span><span class=\"mord mathnormal\">e</span><span class=\"mord mathnormal\" style=\"margin-right: 0.02778em;\">r</span><span class=\"mord mathnormal\">c</span><span class=\"mord mathnormal\">e</span><span class=\"mord mathnormal\">n</span><span class=\"mord mathnormal\">t</span><span class=\"mord mathnormal\">a</span><span class=\"mord mathnormal\" style=\"margin-right: 0.03588em;\">g</span><span class=\"mord mathnormal\">e</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.80556em; vertical-align: -0.05556em;\"></span><span class=\"mord\">5</span><span class=\"mord\">0</span><span class=\"mord\">%</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">⟹</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.68333em; vertical-align: 0em;\"></span><span class=\"mord mathnormal\" style=\"margin-right: 0.13889em;\">F</span></span></span></span></span>﻿</span>  </p><p><br></p><p><br></p><h3><strong>Input Format</strong></h3><p>A single line of input containing five space separated integers.</p><p><br></p><h3><strong>Output Format</strong></h3><p>A single line of output containing grade of student.</p><p><br></p><h3><strong>Constraints</strong></h3><p><span class=\"ql-formula\" data-value=\"0 \\le marks \\le 100\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>m</mi><mi>a</mi><mi>r</mi><mi>k</mi><mi>s</mi><mo>≤</mo><mn>100</mn></mrow><annotation encoding=\"application/x-tex\">0 \\le marks \\le 100</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.78041em; vertical-align: -0.13597em;\"></span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.83041em; vertical-align: -0.13597em;\"></span><span class=\"mord mathnormal\">m</span><span class=\"mord mathnormal\">a</span><span class=\"mord mathnormal\" style=\"margin-right: 0.02778em;\">r</span><span class=\"mord mathnormal\" style=\"margin-right: 0.03148em;\">k</span><span class=\"mord mathnormal\">s</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.64444em; vertical-align: 0em;\"></span><span class=\"mord\">1</span><span class=\"mord\">0</span><span class=\"mord\">0</span></span></span></span></span>﻿</span> </p><p><br></p><p><br></p><h3><strong>Example 1</strong></h3><pre class=\"ql-syntax\" spellcheck=\"false\"><span class=\"hljs-number\">90</span> <span class=\"hljs-number\">91</span> <span class=\"hljs-number\">95</span> <span class=\"hljs-number\">92</span> <span class=\"hljs-number\">97</span>\nA\n</pre><p><br></p><h3><strong>Example 2</strong></h3><pre class=\"ql-syntax\" spellcheck=\"false\"><span class=\"hljs-number\">83</span> <span class=\"hljs-number\">34</span> <span class=\"hljs-number\">2</span> <span class=\"hljs-number\">80</span> <span class=\"hljs-number\">15</span>\n<span class=\"hljs-built_in\">F</span>\n</pre><p> ﻿</p>",
+    "supported_languages": [
+        "c",
+        "cpp",
+        "py",
+        "java",
+        "js"
+    ],
+    "test_cases": [
+        {
+            "input": "90 91 95 92 97",
+            "output": "A",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "79 90 56 94 91",
+            "output": "B",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "91 65 80 70 74",
+            "output": "C",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "56 54 58 78 77",
+            "output": "D",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "29 94 38 53 44",
+            "output": "E",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "83 34 2 80 15",
+            "output": "F",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "98 97 91 100 94",
+            "output": "A",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "95 10 45 77 8",
+            "output": "F",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "5 26 8 97 98",
+            "output": "F",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "82 39 58 76 58",
+            "output": "D",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "52 68 31 48 49",
+            "output": "F",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "16 62 26 84 30",
+            "output": "F",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "57 12 14 16 49",
+            "output": "F",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "66 65 29 45 50",
+            "output": "E",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "90 1 68 96 46",
+            "output": "D",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "91 88 97 56 89",
+            "output": "B",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "91 80 56 67 52",
+            "output": "D",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "72 62 57 68 65",
+            "output": "D",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "55 94 75 51 91",
+            "output": "C",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "68 54 52 64 54",
+            "output": "E",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "70 78 99 98 82",
+            "output": "B",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "59 85 51 86 67",
+            "output": "D",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "91 81 69 99 64",
+            "output": "B",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "92 68 88 100 96",
+            "output": "B",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "89 74 74 85 84",
+            "output": "B",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "80 75 79 76 96",
+            "output": "B",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "95 81 91 71 78",
+            "output": "B",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "98 85 80 85 76",
+            "output": "B",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "84 72 91 65 86",
+            "output": "C",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "62 92 63 67 80",
+            "output": "C",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "80 84 83 68 83",
+            "output": "C",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "81 79 85 70 81",
+            "output": "C",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "90 91 81 77 99",
+            "output": "B",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "84 76 93 75 99",
+            "output": "B",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "99 81 96 86 100",
+            "output": "A",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "75 86 86 97 84",
+            "output": "B",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "74 71 86 84 86",
+            "output": "B",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "81 92 75 99 94",
+            "output": "B",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "78 85 88 72 77",
+            "output": "C",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "70 72 91 74 76",
+            "output": "C",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "95 84 97 79 89",
+            "output": "B",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "87 71 77 100 92",
+            "output": "B",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "82 97 94 83 90",
+            "output": "B",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "91 100 85 90 84",
+            "output": "B",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "81 82 84 90 92",
+            "output": "B",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "89 90 97 97 96",
+            "output": "A",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "98 100 88 93 84",
+            "output": "A",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "85 89 100 92 82",
+            "output": "B",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "84 86 86 100 83",
+            "output": "B",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "89 88 86 83 92",
+            "output": "B",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "96 81 83 95 85",
+            "output": "B",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "81 89 84 87 88",
+            "output": "B",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "99 93 91 97 97",
+            "output": "A",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "91 97 91 93 97",
+            "output": "A",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "91 96 91 94 92",
+            "output": "A",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "92 94 95 97 91",
+            "output": "A",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "91 95 95 98 96",
+            "output": "A",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "96 92 96 93 99",
+            "output": "A",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "94 98 99 100 90",
+            "output": "A",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "90 90 99 98 95",
+            "output": "A",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        }
+    ],
+    "templates": {
+        "c": "#include <stdio.h>\nint main() {\n    // your code goes here\n    return 0;\n}",
+        "cpp": "#include <iostream>\nusing namespace std;\nint main() {\n    // your code goes here\n    return 0;\n}",
+        "py": "# your code goes here",
+        "java": "public class Main {\n    public static void main(String[] args) {\n        // your code goes here\n    }\n}",
+        "js": "// your code goes here"
+    }
+}
