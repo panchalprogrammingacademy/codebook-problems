@@ -1,0 +1,370 @@
+{
+    "title": "Sequence 1",
+    "description": "<h3><strong>Problem Description</strong></h3><p>Write a program to print first <em>N</em> elements of the sequence:</p><p>3 6 9 12 15 18 ...</p><h3><br></h3><h3><strong>Input Format</strong></h3><p>A single line of input containing a single integer.</p><p><br></p><h3><strong>Output Format</strong></h3><p>A single line of output containing <em>N</em> elements of the sequence:</p><p><br></p><h3><strong>Constraints</strong></h3><p><span class=\"ql-formula\" data-value=\"1 \\le N \\le 50\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>≤</mo><mi>N</mi><mo>≤</mo><mn>10</mn></mrow><annotation encoding=\"application/x-tex\">1 \\le N \\le 50</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.78041em; vertical-align: -0.13597em;\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.8193em; vertical-align: -0.13597em;\"></span><span class=\"mord mathnormal\" style=\"margin-right: 0.10903em;\">N</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.64444em; vertical-align: 0em;\"></span><span class=\"mord\">1</span><span class=\"mord\">0</span></span></span></span></span>﻿</span> </p><p><br></p><p><br></p><h3><strong>Example 1</strong></h3><pre class=\"ql-syntax\" spellcheck=\"false\">5\n3 6 9 12 15\n</pre>",
+    "supported_languages": [
+        "c",
+        "cpp",
+        "py",
+        "java",
+        "js"
+    ],
+    "test_cases": [
+        {
+            "input": "1",
+            "output": "3 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "2",
+            "output": "3 6 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "3",
+            "output": "3 6 9 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "4",
+            "output": "3 6 9 12 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "5",
+            "output": "3 6 9 12 15 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "6",
+            "output": "3 6 9 12 15 18 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "7",
+            "output": "3 6 9 12 15 18 21 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "8",
+            "output": "3 6 9 12 15 18 21 24 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "9",
+            "output": "3 6 9 12 15 18 21 24 27 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "10",
+            "output": "3 6 9 12 15 18 21 24 27 30 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "11",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "12",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "13",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "14",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "15",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "16",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "17",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "18",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "19",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "20",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "21",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "22",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "23",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "24",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "25",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "26",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "27",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78 81 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "28",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78 81 84 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "29",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78 81 84 87 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "30",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78 81 84 87 90 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "31",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78 81 84 87 90 93 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "32",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78 81 84 87 90 93 96 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "33",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78 81 84 87 90 93 96 99 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "34",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78 81 84 87 90 93 96 99 102 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "35",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78 81 84 87 90 93 96 99 102 105 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "36",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78 81 84 87 90 93 96 99 102 105 108 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "37",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78 81 84 87 90 93 96 99 102 105 108 111 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "38",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78 81 84 87 90 93 96 99 102 105 108 111 114 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "39",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78 81 84 87 90 93 96 99 102 105 108 111 114 117 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "40",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78 81 84 87 90 93 96 99 102 105 108 111 114 117 120 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "41",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78 81 84 87 90 93 96 99 102 105 108 111 114 117 120 123 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "42",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78 81 84 87 90 93 96 99 102 105 108 111 114 117 120 123 126 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "43",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78 81 84 87 90 93 96 99 102 105 108 111 114 117 120 123 126 129 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "44",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78 81 84 87 90 93 96 99 102 105 108 111 114 117 120 123 126 129 132 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "45",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78 81 84 87 90 93 96 99 102 105 108 111 114 117 120 123 126 129 132 135 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "46",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78 81 84 87 90 93 96 99 102 105 108 111 114 117 120 123 126 129 132 135 138 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "47",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78 81 84 87 90 93 96 99 102 105 108 111 114 117 120 123 126 129 132 135 138 141 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "48",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78 81 84 87 90 93 96 99 102 105 108 111 114 117 120 123 126 129 132 135 138 141 144 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "49",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78 81 84 87 90 93 96 99 102 105 108 111 114 117 120 123 126 129 132 135 138 141 144 147 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "50",
+            "output": "3 6 9 12 15 18 21 24 27 30 33 36 39 42 45 48 51 54 57 60 63 66 69 72 75 78 81 84 87 90 93 96 99 102 105 108 111 114 117 120 123 126 129 132 135 138 141 144 147 150 ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        }
+    ],
+    "templates": {
+        "c": "#include <stdio.h>\nint main() {\n    // your code goes here\n    return 0;\n}",
+        "cpp": "#include <iostream>\nusing namespace std;\nint main() {\n    // your code goes here\n    return 0;\n}",
+        "py": "# your code goes here",
+        "java": "public class Main {\n    public static void main(String[] args) {\n        // your code goes here\n    }\n}",
+        "js": "// your code goes here"
+    }
+}

@@ -1,0 +1,384 @@
+{
+    "title": "Sequence 6",
+    "description": "<h3><strong>Problem Description</strong></h3><p>Write a program to print first <em>N</em> elements of the sequence:</p><p>A a B b C c D d E e&nbsp;...</p><h3><br></h3><h3><strong>Input Format</strong></h3><p>A single line of input containing a single integer.</p><p><br></p><h3><strong>Output Format</strong></h3><p>A single line of output containing <em>N</em> elements of the sequence.</p><p><br></p><h3><strong>Constraints</strong></h3><p><span class=\"ql-formula\" data-value=\"1 \\le N \\le 52\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>≤</mo><mi>N</mi><mo>≤</mo><mn>52</mn></mrow><annotation encoding=\"application/x-tex\">1 \\le N \\le 52</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.78041em; vertical-align: -0.13597em;\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.8193em; vertical-align: -0.13597em;\"></span><span class=\"mord mathnormal\" style=\"margin-right: 0.10903em;\">N</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.64444em; vertical-align: 0em;\"></span><span class=\"mord\">5</span><span class=\"mord\">2</span></span></span></span></span>﻿</span> </p><p><br></p><p><br></p><h3><strong>Example 1</strong></h3><pre class=\"ql-syntax\" spellcheck=\"false\"><span class=\"hljs-number\">10</span>\nA a B b C c D d E e&nbsp;\n</pre>",
+    "supported_languages": [
+        "c",
+        "cpp",
+        "py",
+        "java",
+        "js"
+    ],
+    "test_cases": [
+        {
+            "input": "1",
+            "output": "A ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "2",
+            "output": "A a ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "3",
+            "output": "A a B ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "4",
+            "output": "A a B b ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "5",
+            "output": "A a B b C ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "6",
+            "output": "A a B b C c ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "7",
+            "output": "A a B b C c D ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "8",
+            "output": "A a B b C c D d ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "9",
+            "output": "A a B b C c D d E ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": false
+        },
+        {
+            "input": "10",
+            "output": "A a B b C c D d E e ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "11",
+            "output": "A a B b C c D d E e F ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "12",
+            "output": "A a B b C c D d E e F f ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "13",
+            "output": "A a B b C c D d E e F f G ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "14",
+            "output": "A a B b C c D d E e F f G g ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "15",
+            "output": "A a B b C c D d E e F f G g H ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "16",
+            "output": "A a B b C c D d E e F f G g H h ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "17",
+            "output": "A a B b C c D d E e F f G g H h I ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "18",
+            "output": "A a B b C c D d E e F f G g H h I i ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "19",
+            "output": "A a B b C c D d E e F f G g H h I i J ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "20",
+            "output": "A a B b C c D d E e F f G g H h I i J j ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "21",
+            "output": "A a B b C c D d E e F f G g H h I i J j K ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "22",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "23",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k L ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "24",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k L l ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "25",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k L l M ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "26",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k L l M m ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "27",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k L l M m N ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "28",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k L l M m N n ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "29",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k L l M m N n O ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "30",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k L l M m N n O o ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "31",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k L l M m N n O o P ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "32",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k L l M m N n O o P p ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "33",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k L l M m N n O o P p Q ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "34",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k L l M m N n O o P p Q q ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "35",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k L l M m N n O o P p Q q R ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "36",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k L l M m N n O o P p Q q R r ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "37",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k L l M m N n O o P p Q q R r S ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "38",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k L l M m N n O o P p Q q R r S s ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "39",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k L l M m N n O o P p Q q R r S s T ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "40",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k L l M m N n O o P p Q q R r S s T t ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "41",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k L l M m N n O o P p Q q R r S s T t U ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "42",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k L l M m N n O o P p Q q R r S s T t U u ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "43",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k L l M m N n O o P p Q q R r S s T t U u V ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "44",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k L l M m N n O o P p Q q R r S s T t U u V v ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "45",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k L l M m N n O o P p Q q R r S s T t U u V v W ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "46",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k L l M m N n O o P p Q q R r S s T t U u V v W w ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "47",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k L l M m N n O o P p Q q R r S s T t U u V v W w X ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "48",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k L l M m N n O o P p Q q R r S s T t U u V v W w X x ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "49",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k L l M m N n O o P p Q q R r S s T t U u V v W w X x Y ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "50",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k L l M m N n O o P p Q q R r S s T t U u V v W w X x Y y ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "51",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k L l M m N n O o P p Q q R r S s T t U u V v W w X x Y y Z ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        },
+        {
+            "input": "52",
+            "output": "A a B b C c D d E e F f G g H h I i J j K k L l M m N n O o P p Q q R r S s T t U u V v W w X x Y y Z z ",
+            "score": 2,
+            "timeout": 1000,
+            "locked": true
+        }
+    ],
+    "templates": {
+        "c": "#include <stdio.h>\nint main() {\n    // your code goes here\n    return 0;\n}",
+        "cpp": "#include <iostream>\nusing namespace std;\nint main() {\n    // your code goes here\n    return 0;\n}",
+        "py": "# your code goes here",
+        "java": "public class Main {\n    public static void main(String[] args) {\n        // your code goes here\n    }\n}",
+        "js": "// your code goes here"
+    }
+}
