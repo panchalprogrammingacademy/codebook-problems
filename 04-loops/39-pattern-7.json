@@ -1,0 +1,209 @@
+{
+    "title": "Pattern 7",
+    "description": "<h3><strong>Problem Description</strong></h3><p>Write a program to input an integer <em>N</em> from the user and print first <em>N</em> rows of the following pattern:</p><pre class=\"ql-syntax\" spellcheck=\"false\">A\nA B\nA B C\nA B C D\n</pre><p><br></p><h3><strong>Input Format</strong></h3><p>A single line of input containing a single integer <em>N</em>.</p><p><br></p><h3><strong>Output Format</strong></h3><p>First <em>N</em> rows of the given pattern <em>with a trailing space at the end of each line</em>.</p><p><br></p><h3><strong>Constraints</strong></h3><p><span class=\"ql-formula\" data-value=\"0 \\le N \\le 26\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>N</mi><mo>≤</mo><mn>26</mn></mrow><annotation encoding=\"application/x-tex\">0 \\le N \\le 26</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.78041em; vertical-align: -0.13597em;\"></span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.8193em; vertical-align: -0.13597em;\"></span><span class=\"mord mathnormal\" style=\"margin-right: 0.10903em;\">N</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.64444em; vertical-align: 0em;\"></span><span class=\"mord\">2</span><span class=\"mord\">6</span></span></span></span></span>﻿</span> </p><p><br></p><h3><strong>Example </strong></h3><pre class=\"ql-syntax\" spellcheck=\"false\"><span class=\"hljs-number\">5</span>\nA \nA B \nA B C \nA B C D \nA B C D E \n</pre><p><br></p>",
+    "supported_languages": [
+        "c",
+        "cpp",
+        "py",
+        "java",
+        "js"
+    ],
+    "test_cases": [
+        {
+            "input": "1",
+            "output": "A \n",
+            "timeout": 1000,
+            "score": 2,
+            "locked": false
+        },
+        {
+            "input": "2",
+            "output": "A \nA B \n",
+            "timeout": 1000,
+            "score": 2,
+            "locked": false
+        },
+        {
+            "input": "3",
+            "output": "A \nA B \nA B C \n",
+            "timeout": 1000,
+            "score": 2,
+            "locked": false
+        },
+        {
+            "input": "4",
+            "output": "A \nA B \nA B C \nA B C D \n",
+            "timeout": 1000,
+            "score": 2,
+            "locked": false
+        },
+        {
+            "input": "5",
+            "output": "A \nA B \nA B C \nA B C D \nA B C D E \n",
+            "timeout": 1000,
+            "score": 2,
+            "locked": false
+        },
+        {
+            "input": "6",
+            "output": "A \nA B \nA B C \nA B C D \nA B C D E \nA B C D E F \n",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "7",
+            "output": "A \nA B \nA B C \nA B C D \nA B C D E \nA B C D E F \nA B C D E F G \n",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "8",
+            "output": "A \nA B \nA B C \nA B C D \nA B C D E \nA B C D E F \nA B C D E F G \nA B C D E F G H \n",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "9",
+            "output": "A \nA B \nA B C \nA B C D \nA B C D E \nA B C D E F \nA B C D E F G \nA B C D E F G H \nA B C D E F G H I \n",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "10",
+            "output": "A \nA B \nA B C \nA B C D \nA B C D E \nA B C D E F \nA B C D E F G \nA B C D E F G H \nA B C D E F G H I \nA B C D E F G H I J \n",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "11",
+            "output": "A \nA B \nA B C \nA B C D \nA B C D E \nA B C D E F \nA B C D E F G \nA B C D E F G H \nA B C D E F G H I \nA B C D E F G H I J \nA B C D E F G H I J K \n",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "12",
+            "output": "A \nA B \nA B C \nA B C D \nA B C D E \nA B C D E F \nA B C D E F G \nA B C D E F G H \nA B C D E F G H I \nA B C D E F G H I J \nA B C D E F G H I J K \nA B C D E F G H I J K L \n",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "13",
+            "output": "A \nA B \nA B C \nA B C D \nA B C D E \nA B C D E F \nA B C D E F G \nA B C D E F G H \nA B C D E F G H I \nA B C D E F G H I J \nA B C D E F G H I J K \nA B C D E F G H I J K L \nA B C D E F G H I J K L M \n",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "14",
+            "output": "A \nA B \nA B C \nA B C D \nA B C D E \nA B C D E F \nA B C D E F G \nA B C D E F G H \nA B C D E F G H I \nA B C D E F G H I J \nA B C D E F G H I J K \nA B C D E F G H I J K L \nA B C D E F G H I J K L M \nA B C D E F G H I J K L M N \n",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "15",
+            "output": "A \nA B \nA B C \nA B C D \nA B C D E \nA B C D E F \nA B C D E F G \nA B C D E F G H \nA B C D E F G H I \nA B C D E F G H I J \nA B C D E F G H I J K \nA B C D E F G H I J K L \nA B C D E F G H I J K L M \nA B C D E F G H I J K L M N \nA B C D E F G H I J K L M N O \n",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "16",
+            "output": "A \nA B \nA B C \nA B C D \nA B C D E \nA B C D E F \nA B C D E F G \nA B C D E F G H \nA B C D E F G H I \nA B C D E F G H I J \nA B C D E F G H I J K \nA B C D E F G H I J K L \nA B C D E F G H I J K L M \nA B C D E F G H I J K L M N \nA B C D E F G H I J K L M N O \nA B C D E F G H I J K L M N O P \n",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "17",
+            "output": "A \nA B \nA B C \nA B C D \nA B C D E \nA B C D E F \nA B C D E F G \nA B C D E F G H \nA B C D E F G H I \nA B C D E F G H I J \nA B C D E F G H I J K \nA B C D E F G H I J K L \nA B C D E F G H I J K L M \nA B C D E F G H I J K L M N \nA B C D E F G H I J K L M N O \nA B C D E F G H I J K L M N O P \nA B C D E F G H I J K L M N O P Q \n",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "18",
+            "output": "A \nA B \nA B C \nA B C D \nA B C D E \nA B C D E F \nA B C D E F G \nA B C D E F G H \nA B C D E F G H I \nA B C D E F G H I J \nA B C D E F G H I J K \nA B C D E F G H I J K L \nA B C D E F G H I J K L M \nA B C D E F G H I J K L M N \nA B C D E F G H I J K L M N O \nA B C D E F G H I J K L M N O P \nA B C D E F G H I J K L M N O P Q \nA B C D E F G H I J K L M N O P Q R \n",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "19",
+            "output": "A \nA B \nA B C \nA B C D \nA B C D E \nA B C D E F \nA B C D E F G \nA B C D E F G H \nA B C D E F G H I \nA B C D E F G H I J \nA B C D E F G H I J K \nA B C D E F G H I J K L \nA B C D E F G H I J K L M \nA B C D E F G H I J K L M N \nA B C D E F G H I J K L M N O \nA B C D E F G H I J K L M N O P \nA B C D E F G H I J K L M N O P Q \nA B C D E F G H I J K L M N O P Q R \nA B C D E F G H I J K L M N O P Q R S \n",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "20",
+            "output": "A \nA B \nA B C \nA B C D \nA B C D E \nA B C D E F \nA B C D E F G \nA B C D E F G H \nA B C D E F G H I \nA B C D E F G H I J \nA B C D E F G H I J K \nA B C D E F G H I J K L \nA B C D E F G H I J K L M \nA B C D E F G H I J K L M N \nA B C D E F G H I J K L M N O \nA B C D E F G H I J K L M N O P \nA B C D E F G H I J K L M N O P Q \nA B C D E F G H I J K L M N O P Q R \nA B C D E F G H I J K L M N O P Q R S \nA B C D E F G H I J K L M N O P Q R S T \n",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "21",
+            "output": "A \nA B \nA B C \nA B C D \nA B C D E \nA B C D E F \nA B C D E F G \nA B C D E F G H \nA B C D E F G H I \nA B C D E F G H I J \nA B C D E F G H I J K \nA B C D E F G H I J K L \nA B C D E F G H I J K L M \nA B C D E F G H I J K L M N \nA B C D E F G H I J K L M N O \nA B C D E F G H I J K L M N O P \nA B C D E F G H I J K L M N O P Q \nA B C D E F G H I J K L M N O P Q R \nA B C D E F G H I J K L M N O P Q R S \nA B C D E F G H I J K L M N O P Q R S T \nA B C D E F G H I J K L M N O P Q R S T U \n",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "22",
+            "output": "A \nA B \nA B C \nA B C D \nA B C D E \nA B C D E F \nA B C D E F G \nA B C D E F G H \nA B C D E F G H I \nA B C D E F G H I J \nA B C D E F G H I J K \nA B C D E F G H I J K L \nA B C D E F G H I J K L M \nA B C D E F G H I J K L M N \nA B C D E F G H I J K L M N O \nA B C D E F G H I J K L M N O P \nA B C D E F G H I J K L M N O P Q \nA B C D E F G H I J K L M N O P Q R \nA B C D E F G H I J K L M N O P Q R S \nA B C D E F G H I J K L M N O P Q R S T \nA B C D E F G H I J K L M N O P Q R S T U \nA B C D E F G H I J K L M N O P Q R S T U V \n",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "23",
+            "output": "A \nA B \nA B C \nA B C D \nA B C D E \nA B C D E F \nA B C D E F G \nA B C D E F G H \nA B C D E F G H I \nA B C D E F G H I J \nA B C D E F G H I J K \nA B C D E F G H I J K L \nA B C D E F G H I J K L M \nA B C D E F G H I J K L M N \nA B C D E F G H I J K L M N O \nA B C D E F G H I J K L M N O P \nA B C D E F G H I J K L M N O P Q \nA B C D E F G H I J K L M N O P Q R \nA B C D E F G H I J K L M N O P Q R S \nA B C D E F G H I J K L M N O P Q R S T \nA B C D E F G H I J K L M N O P Q R S T U \nA B C D E F G H I J K L M N O P Q R S T U V \nA B C D E F G H I J K L M N O P Q R S T U V W \n",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "24",
+            "output": "A \nA B \nA B C \nA B C D \nA B C D E \nA B C D E F \nA B C D E F G \nA B C D E F G H \nA B C D E F G H I \nA B C D E F G H I J \nA B C D E F G H I J K \nA B C D E F G H I J K L \nA B C D E F G H I J K L M \nA B C D E F G H I J K L M N \nA B C D E F G H I J K L M N O \nA B C D E F G H I J K L M N O P \nA B C D E F G H I J K L M N O P Q \nA B C D E F G H I J K L M N O P Q R \nA B C D E F G H I J K L M N O P Q R S \nA B C D E F G H I J K L M N O P Q R S T \nA B C D E F G H I J K L M N O P Q R S T U \nA B C D E F G H I J K L M N O P Q R S T U V \nA B C D E F G H I J K L M N O P Q R S T U V W \nA B C D E F G H I J K L M N O P Q R S T U V W X \n",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "25",
+            "output": "A \nA B \nA B C \nA B C D \nA B C D E \nA B C D E F \nA B C D E F G \nA B C D E F G H \nA B C D E F G H I \nA B C D E F G H I J \nA B C D E F G H I J K \nA B C D E F G H I J K L \nA B C D E F G H I J K L M \nA B C D E F G H I J K L M N \nA B C D E F G H I J K L M N O \nA B C D E F G H I J K L M N O P \nA B C D E F G H I J K L M N O P Q \nA B C D E F G H I J K L M N O P Q R \nA B C D E F G H I J K L M N O P Q R S \nA B C D E F G H I J K L M N O P Q R S T \nA B C D E F G H I J K L M N O P Q R S T U \nA B C D E F G H I J K L M N O P Q R S T U V \nA B C D E F G H I J K L M N O P Q R S T U V W \nA B C D E F G H I J K L M N O P Q R S T U V W X \nA B C D E F G H I J K L M N O P Q R S T U V W X Y \n",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "26",
+            "output": "A \nA B \nA B C \nA B C D \nA B C D E \nA B C D E F \nA B C D E F G \nA B C D E F G H \nA B C D E F G H I \nA B C D E F G H I J \nA B C D E F G H I J K \nA B C D E F G H I J K L \nA B C D E F G H I J K L M \nA B C D E F G H I J K L M N \nA B C D E F G H I J K L M N O \nA B C D E F G H I J K L M N O P \nA B C D E F G H I J K L M N O P Q \nA B C D E F G H I J K L M N O P Q R \nA B C D E F G H I J K L M N O P Q R S \nA B C D E F G H I J K L M N O P Q R S T \nA B C D E F G H I J K L M N O P Q R S T U \nA B C D E F G H I J K L M N O P Q R S T U V \nA B C D E F G H I J K L M N O P Q R S T U V W \nA B C D E F G H I J K L M N O P Q R S T U V W X \nA B C D E F G H I J K L M N O P Q R S T U V W X Y \nA B C D E F G H I J K L M N O P Q R S T U V W X Y Z \n",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "0",
+            "output": "",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        }
+    ],
+    "templates": {
+        "c": "#include <stdio.h>\nint main() {\n    // your code goes here\n    return 0;\n}",
+        "cpp": "#include <iostream>\nusing namespace std;\nint main() {\n    // your code goes here\n    return 0;\n}",
+        "py": "# your code goes here",
+        "java": "import java.util.*;\npublic class Main {\n    public static void main(String[] args) {\n        // your code goes here\n    }\n}",
+        "js": "// your code goes here"
+    }
+}

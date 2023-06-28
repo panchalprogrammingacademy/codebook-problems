@@ -1,0 +1,97 @@
+{
+    "title": "Series 5",
+    "description": "<h3><strong>Problem Description</strong></h3><p>Write a program to input an integer <em>N</em> and a double value <em>x</em> from the user and print the sum of first <em>N</em> terms of the following series:</p><p><span class=\"ql-formula\" data-value=\"1 - \\dfrac{x}{1!} + \\dfrac{x^2}{2!} - \\dfrac{x^3}{3!} + \\dfrac{x^4}{4!} + ...\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>−</mo><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mi>x</mi><mrow><mn>1</mn><mo stretchy=\"false\">!</mo></mrow></mfrac></mstyle><mo>+</mo><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><msup><mi>x</mi><mn>2</mn></msup><mrow><mn>2</mn><mo stretchy=\"false\">!</mo></mrow></mfrac></mstyle><mo>−</mo><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><msup><mi>x</mi><mn>3</mn></msup><mrow><mn>3</mn><mo stretchy=\"false\">!</mo></mrow></mfrac></mstyle><mo>+</mo><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><msup><mi>x</mi><mn>4</mn></msup><mrow><mn>4</mn><mo stretchy=\"false\">!</mo></mrow></mfrac></mstyle><mo>+</mo><mi mathvariant=\"normal\">.</mi><mi mathvariant=\"normal\">.</mi><mi mathvariant=\"normal\">.</mi></mrow><annotation encoding=\"application/x-tex\">1 - \\dfrac{x}{1!} + \\dfrac{x^2}{2!} - \\dfrac{x^3}{3!} + \\dfrac{x^4}{4!} + ...</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.72777em; vertical-align: -0.08333em;\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right: 0.222222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right: 0.222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 1.79356em; vertical-align: -0.686em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height: 1.10756em;\"><span class=\"\" style=\"top: -2.314em;\"><span class=\"pstrut\" style=\"height: 3em;\"></span><span class=\"mord\"><span class=\"mord\">1</span><span class=\"mclose\">!</span></span></span><span class=\"\" style=\"top: -3.23em;\"><span class=\"pstrut\" style=\"height: 3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width: 0.04em;\"></span></span><span class=\"\" style=\"top: -3.677em;\"><span class=\"pstrut\" style=\"height: 3em;\"></span><span class=\"mord\"><span class=\"mord mathnormal\">x</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height: 0.686em;\"><span class=\"\"></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mspace\" style=\"margin-right: 0.222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right: 0.222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 2.17711em; vertical-align: -0.686em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height: 1.49111em;\"><span class=\"\" style=\"top: -2.314em;\"><span class=\"pstrut\" style=\"height: 3em;\"></span><span class=\"mord\"><span class=\"mord\">2</span><span class=\"mclose\">!</span></span></span><span class=\"\" style=\"top: -3.23em;\"><span class=\"pstrut\" style=\"height: 3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width: 0.04em;\"></span></span><span class=\"\" style=\"top: -3.677em;\"><span class=\"pstrut\" style=\"height: 3em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height: 0.814108em;\"><span class=\"\" style=\"top: -3.063em; margin-right: 0.05em;\"><span class=\"pstrut\" style=\"height: 2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">2</span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height: 0.686em;\"><span class=\"\"></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mspace\" style=\"margin-right: 0.222222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right: 0.222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 2.17711em; vertical-align: -0.686em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height: 1.49111em;\"><span class=\"\" style=\"top: -2.314em;\"><span class=\"pstrut\" style=\"height: 3em;\"></span><span class=\"mord\"><span class=\"mord\">3</span><span class=\"mclose\">!</span></span></span><span class=\"\" style=\"top: -3.23em;\"><span class=\"pstrut\" style=\"height: 3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width: 0.04em;\"></span></span><span class=\"\" style=\"top: -3.677em;\"><span class=\"pstrut\" style=\"height: 3em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height: 0.814108em;\"><span class=\"\" style=\"top: -3.063em; margin-right: 0.05em;\"><span class=\"pstrut\" style=\"height: 2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">3</span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height: 0.686em;\"><span class=\"\"></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mspace\" style=\"margin-right: 0.222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right: 0.222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 2.17711em; vertical-align: -0.686em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height: 1.49111em;\"><span class=\"\" style=\"top: -2.314em;\"><span class=\"pstrut\" style=\"height: 3em;\"></span><span class=\"mord\"><span class=\"mord\">4</span><span class=\"mclose\">!</span></span></span><span class=\"\" style=\"top: -3.23em;\"><span class=\"pstrut\" style=\"height: 3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width: 0.04em;\"></span></span><span class=\"\" style=\"top: -3.677em;\"><span class=\"pstrut\" style=\"height: 3em;\"></span><span class=\"mord\"><span class=\"mord\"><span class=\"mord mathnormal\">x</span><span class=\"msupsub\"><span class=\"vlist-t\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height: 0.814108em;\"><span class=\"\" style=\"top: -3.063em; margin-right: 0.05em;\"><span class=\"pstrut\" style=\"height: 2.7em;\"></span><span class=\"sizing reset-size6 size3 mtight\"><span class=\"mord mtight\">4</span></span></span></span></span></span></span></span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height: 0.686em;\"><span class=\"\"></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mspace\" style=\"margin-right: 0.222222em;\"></span><span class=\"mbin\">+</span><span class=\"mspace\" style=\"margin-right: 0.222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.10556em; vertical-align: 0em;\"></span><span class=\"mord\">.</span><span class=\"mord\">.</span><span class=\"mord\">.</span></span></span></span></span>﻿</span> </p><p><br></p><h3><strong>Input Format</strong></h3><p>A single line of input containing an integer followed <em>N</em> by a real number <em>x</em></p><p><br></p><p><strong>Output Format</strong></p><p>A single line of output containing the sum of first <em>N</em> terms of the given series upto 6 decimal places.</p><p><br></p><h3><strong>Constraints</strong></h3><p><span class=\"ql-formula\" data-value=\"0 \\le N \\le 10\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>N</mi><mo>≤</mo><mn>10</mn></mrow><annotation encoding=\"application/x-tex\">0 \\le N \\le 10</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.78041em; vertical-align: -0.13597em;\"></span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.8193em; vertical-align: -0.13597em;\"></span><span class=\"mord mathnormal\" style=\"margin-right: 0.10903em;\">N</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.64444em; vertical-align: 0em;\"></span><span class=\"mord\">1</span><span class=\"mord\">0</span></span></span></span></span>﻿</span> </p><p><span class=\"ql-formula\" data-value=\"0 \\le x \\le 1\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>1</mn></mrow><annotation encoding=\"application/x-tex\">0 \\le x \\le 1</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.78041em; vertical-align: -0.13597em;\"></span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.77194em; vertical-align: -0.13597em;\"></span><span class=\"mord mathnormal\">x</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.64444em; vertical-align: 0em;\"></span><span class=\"mord\">1</span></span></span></span></span>﻿</span> </p><p><br></p><h3><strong>Example</strong></h3><pre class=\"ql-syntax\" spellcheck=\"false\">2 0.35\n0.650000\n</pre><p>Given N = 2, x = 0.69 the sum of first two terms is given by</p><p><span class=\"ql-formula\" data-value=\"1 - \\dfrac{0.35}{1!}  = 1 - \\dfrac{0.35}{1} = 1 - 0.35 = 0.65\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>−</mo><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>0.35</mn><mrow><mn>1</mn><mo stretchy=\"false\">!</mo></mrow></mfrac></mstyle><mo>=</mo><mn>1</mn><mo>−</mo><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mfrac><mn>0.35</mn><mn>1</mn></mfrac></mstyle><mo>=</mo><mn>1</mn><mo>−</mo><mn>0.35</mn><mo>=</mo><mn>0.65</mn></mrow><annotation encoding=\"application/x-tex\">1 - \\dfrac{0.35}{1!}  = 1 - \\dfrac{0.35}{1} = 1 - 0.35 = 0.65</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.72777em; vertical-align: -0.08333em;\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right: 0.222222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right: 0.222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 2.00744em; vertical-align: -0.686em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height: 1.32144em;\"><span class=\"\" style=\"top: -2.314em;\"><span class=\"pstrut\" style=\"height: 3em;\"></span><span class=\"mord\"><span class=\"mord\">1</span><span class=\"mclose\">!</span></span></span><span class=\"\" style=\"top: -3.23em;\"><span class=\"pstrut\" style=\"height: 3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width: 0.04em;\"></span></span><span class=\"\" style=\"top: -3.677em;\"><span class=\"pstrut\" style=\"height: 3em;\"></span><span class=\"mord\"><span class=\"mord\">0</span><span class=\"mord\">.</span><span class=\"mord\">3</span><span class=\"mord\">5</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height: 0.686em;\"><span class=\"\"></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.72777em; vertical-align: -0.08333em;\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right: 0.222222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right: 0.222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 2.00744em; vertical-align: -0.686em;\"></span><span class=\"mord\"><span class=\"mopen nulldelimiter\"></span><span class=\"mfrac\"><span class=\"vlist-t vlist-t2\"><span class=\"vlist-r\"><span class=\"vlist\" style=\"height: 1.32144em;\"><span class=\"\" style=\"top: -2.314em;\"><span class=\"pstrut\" style=\"height: 3em;\"></span><span class=\"mord\"><span class=\"mord\">1</span></span></span><span class=\"\" style=\"top: -3.23em;\"><span class=\"pstrut\" style=\"height: 3em;\"></span><span class=\"frac-line\" style=\"border-bottom-width: 0.04em;\"></span></span><span class=\"\" style=\"top: -3.677em;\"><span class=\"pstrut\" style=\"height: 3em;\"></span><span class=\"mord\"><span class=\"mord\">0</span><span class=\"mord\">.</span><span class=\"mord\">3</span><span class=\"mord\">5</span></span></span></span><span class=\"vlist-s\">​</span></span><span class=\"vlist-r\"><span class=\"vlist\" style=\"height: 0.686em;\"><span class=\"\"></span></span></span></span></span><span class=\"mclose nulldelimiter\"></span></span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.72777em; vertical-align: -0.08333em;\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right: 0.222222em;\"></span><span class=\"mbin\">−</span><span class=\"mspace\" style=\"margin-right: 0.222222em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.64444em; vertical-align: 0em;\"></span><span class=\"mord\">0</span><span class=\"mord\">.</span><span class=\"mord\">3</span><span class=\"mord\">5</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">=</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.64444em; vertical-align: 0em;\"></span><span class=\"mord\">0</span><span class=\"mord\">.</span><span class=\"mord\">6</span><span class=\"mord\">5</span></span></span></span></span>﻿</span> </p>",
+    "supported_languages": [
+        "c",
+        "cpp",
+        "py",
+        "java",
+        "js"
+    ],
+    "test_cases": [
+        {
+            "input": "1 0.710000",
+            "output": "1.000000",
+            "timeout": 1000,
+            "score": 2,
+            "locked": false
+        },
+        {
+            "input": "2 0.350000",
+            "output": "0.650000",
+            "timeout": 1000,
+            "score": 2,
+            "locked": false
+        },
+        {
+            "input": "3 0.570000",
+            "output": "0.592450",
+            "timeout": 1000,
+            "score": 2,
+            "locked": false
+        },
+        {
+            "input": "4 0.160000",
+            "output": "0.852117",
+            "timeout": 1000,
+            "score": 2,
+            "locked": false
+        },
+        {
+            "input": "5 0.820000",
+            "output": "0.443144",
+            "timeout": 1000,
+            "score": 2,
+            "locked": false
+        },
+        {
+            "input": "6 0.580000",
+            "output": "0.559850",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "7 0.340000",
+            "output": "0.711770",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "8 0.860000",
+            "output": "0.423155",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "9 0.530000",
+            "output": "0.588605",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "10 0.420000",
+            "output": "0.657047",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "0 0.130000",
+            "output": "0.000000",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        }
+    ],
+    "templates": {
+        "c": "#include <stdio.h>\nint main() {\n    // your code goes here\n    return 0;\n}",
+        "cpp": "#include <iostream>\nusing namespace std;\nint main() {\n    // your code goes here\n    return 0;\n}",
+        "py": "# your code goes here",
+        "java": "import java.util.*;\npublic class Main {\n    public static void main(String[] args) {\n        // your code goes here\n    }\n}",
+        "js": "// your code goes here"
+    }
+}
