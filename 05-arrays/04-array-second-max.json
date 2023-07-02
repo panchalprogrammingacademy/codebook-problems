@@ -1,0 +1,363 @@
+{
+    "title": "Array Second Maximum",
+    "description": "<h3><strong>Problem Description</strong></h3><p>Write a program to input <em>N</em> elements of an array <em>A</em> from user and print the second maximum element of the array.</p><p><br></p><h3><strong>Input Format</strong></h3><p>First line of input contains a single integer <em>N</em></p><p>Second line of input contains <em>N</em> space separated integers representing elements of array <em>A</em>.</p><p><br></p><h3><strong>Output Format</strong></h3><p>A single line of output containing a single integer representing the second maximum element of array <em>A</em>.</p><p><br></p><h3><strong>Constraints</strong></h3><p><span class=\"ql-formula\" data-value=\"2 \\le N \\le 50\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>≤</mo><mi>N</mi><mo>≤</mo><mn>50</mn></mrow><annotation encoding=\"application/x-tex\">2 \\le N \\le 50</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.78041em; vertical-align: -0.13597em;\"></span><span class=\"mord\">2</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.8193em; vertical-align: -0.13597em;\"></span><span class=\"mord mathnormal\" style=\"margin-right: 0.10903em;\">N</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.64444em; vertical-align: 0em;\"></span><span class=\"mord\">5</span><span class=\"mord\">0</span></span></span></span></span>﻿</span> </p><p><span class=\"ql-formula\" data-value=\"0 \\le A[i] \\le 1000\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>A</mi><mo stretchy=\"false\">[</mo><mi>i</mi><mo stretchy=\"false\">]</mo><mo>≤</mo><mn>1000</mn></mrow><annotation encoding=\"application/x-tex\">0 \\le A[i] \\le 1000</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.78041em; vertical-align: -0.13597em;\"></span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 1em; vertical-align: -0.25em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mopen\">[</span><span class=\"mord mathnormal\">i</span><span class=\"mclose\">]</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.64444em; vertical-align: 0em;\"></span><span class=\"mord\">1</span><span class=\"mord\">0</span><span class=\"mord\">0</span><span class=\"mord\">0</span></span></span></span></span>﻿</span> </p><p><br></p><h3><strong>Example</strong></h3><pre class=\"ql-syntax\" spellcheck=\"false\">5\n2 39 51 89 98\n89\n</pre>",
+    "supported_languages": [
+        "c",
+        "cpp",
+        "py",
+        "java",
+        "js"
+    ],
+    "test_cases": [
+        {
+            "input": "2\n98 12",
+            "output": "12",
+            "timeout": 1000,
+            "score": 2,
+            "locked": false
+        },
+        {
+            "input": "3\n88 83 75",
+            "output": "83",
+            "timeout": 1000,
+            "score": 2,
+            "locked": false
+        },
+        {
+            "input": "4\n73 58 73 99",
+            "output": "73",
+            "timeout": 1000,
+            "score": 2,
+            "locked": false
+        },
+        {
+            "input": "5\n2 39 51 89 98",
+            "output": "89",
+            "timeout": 1000,
+            "score": 2,
+            "locked": false
+        },
+        {
+            "input": "6\n7 12 69 1 58 18",
+            "output": "58",
+            "timeout": 1000,
+            "score": 2,
+            "locked": false
+        },
+        {
+            "input": "7\n61 62 56 66 67 26 89",
+            "output": "67",
+            "timeout": 1000,
+            "score": 2,
+            "locked": false
+        },
+        {
+            "input": "8\n54 3 18 40 45 39 41 66",
+            "output": "54",
+            "timeout": 1000,
+            "score": 2,
+            "locked": false
+        },
+        {
+            "input": "9\n23 0 22 0 4 57 94 90 95",
+            "output": "94",
+            "timeout": 1000,
+            "score": 2,
+            "locked": false
+        },
+        {
+            "input": "10\n88 66 64 17 37 68 12 54 98 74",
+            "output": "88",
+            "timeout": 1000,
+            "score": 2,
+            "locked": false
+        },
+        {
+            "input": "11\n2 59 75 73 23 32 88 58 57 60 8",
+            "output": "75",
+            "timeout": 1000,
+            "score": 2,
+            "locked": false
+        },
+        {
+            "input": "12\n91 68 8 68 27 88 94 62 68 54 31 40",
+            "output": "91",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "13\n81 91 41 10 87 83 11 56 59 11 26 34 9",
+            "output": "87",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "14\n91 18 35 31 14 3 93 41 36 87 22 57 24 96",
+            "output": "93",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "15\n60 100 22 57 50 80 4 46 98 44 50 57 44 64 67",
+            "output": "98",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "16\n64 1 0 54 84 42 20 15 89 59 12 2 15 94 4 5",
+            "output": "89",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "17\n15 96 35 28 92 19 69 72 38 29 78 73 100 42 36 90 78",
+            "output": "96",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "18\n47 30 42 53 34 87 74 99 70 70 20 51 35 38 100 91 26 64",
+            "output": "99",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "19\n20 0 89 29 23 91 90 50 72 40 48 36 36 12 21 3 81 80 30",
+            "output": "90",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "20\n97 86 42 92 28 50 51 84 97 27 53 17 98 13 68 48 62 63 9 34",
+            "output": "97",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "21\n68 19 66 94 36 83 90 82 27 32 56 68 34 25 32 2 32 34 78 46 15",
+            "output": "90",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "22\n53 20 2 43 18 41 53 16 13 92 75 26 14 68 2 47 51 87 78 82 83 98",
+            "output": "92",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "23\n24 17 57 27 53 80 35 21 97 73 60 88 74 17 36 49 44 59 6 4 33 49 75",
+            "output": "88",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "24\n60 89 69 40 98 56 91 87 88 2 42 75 79 23 21 38 55 65 49 85 52 98 35 24",
+            "output": "98",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "25\n75 44 70 9 3 48 0 25 89 23 26 61 63 74 12 35 39 34 78 18 51 49 29 7 71",
+            "output": "78",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "26\n94 40 100 68 54 30 58 27 50 92 61 56 1 67 16 4 18 92 42 82 26 33 14 41 27 3",
+            "output": "94",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "27\n78 64 58 32 53 29 55 52 50 19 11 85 60 24 73 32 66 93 11 15 74 39 33 27 90 83 7",
+            "output": "90",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "28\n63 2 7 36 68 72 40 51 17 62 50 6 92 95 1 9 58 77 1 27 29 30 80 59 15 14 46 56",
+            "output": "92",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "29\n4 53 39 90 38 1 27 34 2 19 98 11 39 3 4 93 6 80 25 81 16 28 57 78 26 53 92 62 98",
+            "output": "98",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "30\n90 90 28 65 91 28 5 58 78 57 32 68 95 5 28 44 74 0 21 24 40 63 70 86 10 100 100 100 48 96",
+            "output": "100",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "31\n38 13 41 56 0 88 33 45 78 41 63 46 2 18 26 25 35 36 19 9 56 3 71 66 98 51 36 63 99 28 1",
+            "output": "98",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "32\n97 76 7 11 9 80 67 41 1 81 51 79 41 13 25 26 46 0 53 61 50 88 5 47 85 35 2 93 75 77 15 58",
+            "output": "93",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "33\n33 92 10 63 7 94 79 59 64 47 13 16 49 56 48 9 9 72 86 17 51 12 75 35 12 2 55 19 44 9 92 49 27",
+            "output": "92",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "34\n43 76 25 54 11 26 46 66 57 83 20 42 67 51 4 20 91 23 51 20 83 38 61 29 63 2 95 91 12 99 50 12 85 48",
+            "output": "95",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "35\n44 72 10 14 57 20 82 45 18 41 12 94 96 59 62 35 80 45 98 21 44 27 89 35 61 100 91 34 19 31 61 0 86 71 46",
+            "output": "98",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "36\n41 46 3 16 68 96 57 19 8 56 11 94 32 22 90 69 54 67 68 28 34 0 49 23 0 82 77 43 35 99 94 5 74 90 74 10",
+            "output": "96",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "37\n38 6 25 55 74 48 49 43 17 96 100 10 36 75 53 93 57 81 90 38 39 84 94 72 100 28 25 46 56 38 16 92 1 5 58 83 24",
+            "output": "100",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "38\n68 41 29 32 95 37 21 20 49 33 39 15 2 81 32 73 56 100 40 15 15 57 38 31 53 56 91 68 17 45 58 63 4 18 15 16 75 100",
+            "output": "100",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "39\n12 45 76 2 18 28 73 49 88 29 56 77 69 72 56 83 28 34 91 48 4 100 50 23 84 18 70 44 81 42 59 99 25 78 28 6 57 84 97",
+            "output": "99",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "40\n5 1 70 10 36 56 87 67 14 100 1 36 35 16 36 73 38 16 17 67 12 23 95 35 65 3 91 10 20 22 16 31 98 71 86 43 23 29 84 31",
+            "output": "98",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "41\n2 63 65 44 61 10 88 6 54 7 100 53 74 6 74 48 74 78 96 45 68 68 41 78 45 67 33 67 94 60 17 9 22 25 43 41 47 22 95 87 96",
+            "output": "96",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "42\n70 90 73 49 34 62 81 52 32 81 14 90 90 68 9 28 81 12 75 8 14 12 34 98 41 21 36 63 73 29 82 80 3 48 32 95 16 30 15 87 49 35",
+            "output": "95",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "43\n33 52 0 25 28 44 92 22 54 34 75 20 94 74 37 4 34 41 36 85 67 4 91 69 93 18 23 12 62 9 92 90 10 6 89 7 94 56 40 98 84 10 26",
+            "output": "94",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "44\n99 16 16 19 54 71 6 27 31 50 89 87 70 20 59 41 82 42 83 76 97 88 17 53 16 12 85 24 43 88 41 82 0 64 61 54 20 88 83 38 41 29 19 58",
+            "output": "97",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "45\n25 30 43 57 5 60 47 6 66 76 60 45 21 9 72 17 16 42 54 34 92 94 7 69 73 55 5 42 40 33 7 53 13 76 20 16 86 30 86 51 55 59 5 19 81",
+            "output": "92",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "46\n8 50 50 28 26 4 68 24 70 2 55 2 2 60 49 40 63 81 29 45 16 2 95 46 44 77 63 57 57 96 38 13 66 73 97 36 54 57 52 46 22 86 24 62 70 17",
+            "output": "96",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "47\n16 11 60 35 2 60 58 96 53 68 86 58 87 22 54 61 92 3 60 53 61 76 64 95 60 43 49 29 50 36 28 68 45 73 21 7 89 57 74 34 87 54 46 78 79 54 90",
+            "output": "95",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "48\n35 51 55 99 94 19 85 35 51 80 87 51 15 46 39 67 57 23 28 11 85 55 85 6 16 9 35 49 23 69 32 97 49 80 69 11 88 28 80 52 9 25 11 77 28 3 45 28",
+            "output": "97",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "49\n89 85 14 44 98 66 73 82 23 95 65 79 75 3 14 61 72 50 87 71 30 65 60 63 46 20 6 74 68 73 60 40 29 88 96 89 92 31 53 10 71 58 28 40 66 58 59 5 25",
+            "output": "96",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "50\n84 63 22 85 72 90 5 15 37 13 3 93 18 68 92 56 7 7 90 81 69 22 18 35 73 33 26 9 49 86 41 12 22 25 27 33 66 54 21 51 35 3 35 97 56 56 88 59 3 10",
+            "output": "93",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        }
+    ],
+    "templates": {
+        "c": "#include <stdio.h>\nint main() {\n    // your code goes here\n    return 0;\n}",
+        "cpp": "#include <iostream>\nusing namespace std;\nint main() {\n    // your code goes here\n    return 0;\n}",
+        "py": "# your code goes here",
+        "java": "public class Main {\n    public static void main(String[] args) {\n        // your code goes here\n    }\n}",
+        "js": "// your code goes here"
+    }
+}

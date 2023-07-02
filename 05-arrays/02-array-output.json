@@ -1,0 +1,377 @@
+{
+    "title": "Array Output",
+    "description": "<h3><strong>Problem Description</strong></h3><p>Write a program to input <em>N</em> elements of an array <em>A</em> from user and print them in list format.</p><h3><br></h3><h3><strong>Input Format</strong></h3><p>First line of input contains a single integer <em>N.</em></p><p>Second line of input contains <em>N</em> space separated integers representing elements of array.</p><p><br></p><h3><strong>Output Format</strong></h3><p>A single line of output containing elements of array in list format.</p><p><br></p><h3><strong>Constraints</strong></h3><p><span class=\"ql-formula\" data-value=\"0 \\le N \\le 50\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>N</mi><mo>≤</mo><mn>50</mn></mrow><annotation encoding=\"application/x-tex\">0 \\le N \\le 50</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.78041em; vertical-align: -0.13597em;\"></span><span class=\"mord\">1</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.8193em; vertical-align: -0.13597em;\"></span><span class=\"mord mathnormal\" style=\"margin-right: 0.10903em;\">N</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.64444em; vertical-align: 0em;\"></span><span class=\"mord\">5</span><span class=\"mord\">0</span></span></span></span></span>﻿</span> </p><p><span class=\"ql-formula\" data-value=\"0 \\le A[i] \\le 100\">﻿<span contenteditable=\"false\"><span class=\"katex\"><span class=\"katex-mathml\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>A</mi><mo stretchy=\"false\">[</mo><mi>i</mi><mo stretchy=\"false\">]</mo><mo>≤</mo><mn>100</mn></mrow><annotation encoding=\"application/x-tex\">0 \\le A[i] \\le 100</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"base\"><span class=\"strut\" style=\"height: 0.78041em; vertical-align: -0.13597em;\"></span><span class=\"mord\">0</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 1em; vertical-align: -0.25em;\"></span><span class=\"mord mathnormal\">A</span><span class=\"mopen\">[</span><span class=\"mord mathnormal\">i</span><span class=\"mclose\">]</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span><span class=\"mrel\">≤</span><span class=\"mspace\" style=\"margin-right: 0.277778em;\"></span></span><span class=\"base\"><span class=\"strut\" style=\"height: 0.64444em; vertical-align: 0em;\"></span><span class=\"mord\">1</span><span class=\"mord\">0</span><span class=\"mord\">0</span></span></span></span></span>﻿</span> </p><p><br></p><p><br></p><h3><strong>Example</strong></h3><pre class=\"ql-syntax\" spellcheck=\"false\"><span class=\"hljs-number\">5</span>\n<span class=\"hljs-number\">4</span> <span class=\"hljs-number\">38</span> <span class=\"hljs-number\">95</span> <span class=\"hljs-number\">17</span> <span class=\"hljs-number\">96</span>\n﻿[<span class=\"hljs-meta\">4, 38, 95, 17, 96</span>]\n</pre><p><br></p>",
+    "supported_languages": [
+        "c",
+        "cpp",
+        "py",
+        "java",
+        "js"
+    ],
+    "test_cases": [
+        {
+            "input": "2\n8 37",
+            "output": "[8, 37]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": false
+        },
+        {
+            "input": "3\n26 1 2",
+            "output": "[26, 1, 2]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": false
+        },
+        {
+            "input": "4\n6 62 98 41",
+            "output": "[6, 62, 98, 41]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": false
+        },
+        {
+            "input": "5\n4 38 95 17 96",
+            "output": "[4, 38, 95, 17, 96]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": false
+        },
+        {
+            "input": "6\n86 16 91 67 77 35",
+            "output": "[86, 16, 91, 67, 77, 35]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": false
+        },
+        {
+            "input": "7\n85 89 74 54 24 1 10",
+            "output": "[85, 89, 74, 54, 24, 1, 10]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": false
+        },
+        {
+            "input": "8\n77 22 66 26 89 12 60 50",
+            "output": "[77, 22, 66, 26, 89, 12, 60, 50]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": false
+        },
+        {
+            "input": "9\n64 31 6 69 2 57 66 36 33",
+            "output": "[64, 31, 6, 69, 2, 57, 66, 36, 33]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": false
+        },
+        {
+            "input": "10\n33 9 39 20 11 50 35 53 80 81",
+            "output": "[33, 9, 39, 20, 11, 50, 35, 53, 80, 81]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": false
+        },
+        {
+            "input": "11\n47 84 45 38 34 16 67 62 20 64 23",
+            "output": "[47, 84, 45, 38, 34, 16, 67, 62, 20, 64, 23]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "12\n96 76 59 31 20 36 94 86 85 70 56 3",
+            "output": "[96, 76, 59, 31, 20, 36, 94, 86, 85, 70, 56, 3]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "13\n4 97 40 49 69 63 82 66 87 50 11 81 59",
+            "output": "[4, 97, 40, 49, 69, 63, 82, 66, 87, 50, 11, 81, 59]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "14\n3 39 96 62 1 55 20 67 49 69 24 44 33 93",
+            "output": "[3, 39, 96, 62, 1, 55, 20, 67, 49, 69, 24, 44, 33, 93]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "15\n57 31 43 78 56 0 54 82 66 15 92 77 38 76 53",
+            "output": "[57, 31, 43, 78, 56, 0, 54, 82, 66, 15, 92, 77, 38, 76, 53]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "16\n54 15 61 62 12 33 66 73 12 8 31 42 84 5 96 7",
+            "output": "[54, 15, 61, 62, 12, 33, 66, 73, 12, 8, 31, 42, 84, 5, 96, 7]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "17\n35 86 71 48 75 24 51 29 66 6 12 19 24 20 42 32 51",
+            "output": "[35, 86, 71, 48, 75, 24, 51, 29, 66, 6, 12, 19, 24, 20, 42, 32, 51]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "18\n16 13 8 3 62 10 68 18 11 72 83 91 16 99 6 56 95 64",
+            "output": "[16, 13, 8, 3, 62, 10, 68, 18, 11, 72, 83, 91, 16, 99, 6, 56, 95, 64]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "19\n19 19 33 99 82 1 94 96 80 21 33 26 63 79 44 44 29 31 98",
+            "output": "[19, 19, 33, 99, 82, 1, 94, 96, 80, 21, 33, 26, 63, 79, 44, 44, 29, 31, 98]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "20\n71 29 32 46 40 95 58 40 44 22 41 97 94 52 19 16 68 9 97 34",
+            "output": "[71, 29, 32, 46, 40, 95, 58, 40, 44, 22, 41, 97, 94, 52, 19, 16, 68, 9, 97, 34]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "21\n26 17 95 72 78 8 83 83 61 68 25 80 48 51 83 78 91 66 31 18 75",
+            "output": "[26, 17, 95, 72, 78, 8, 83, 83, 61, 68, 25, 80, 48, 51, 83, 78, 91, 66, 31, 18, 75]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "22\n9 84 48 96 41 75 52 39 3 64 16 52 63 55 0 88 28 100 65 84 2 74",
+            "output": "[9, 84, 48, 96, 41, 75, 52, 39, 3, 64, 16, 52, 63, 55, 0, 88, 28, 100, 65, 84, 2, 74]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "23\n79 60 47 51 14 14 31 8 23 67 68 18 50 54 36 17 97 25 84 10 43 59 57",
+            "output": "[79, 60, 47, 51, 14, 14, 31, 8, 23, 67, 68, 18, 50, 54, 36, 17, 97, 25, 84, 10, 43, 59, 57]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "24\n59 22 64 51 12 43 75 27 98 39 17 11 35 5 5 38 18 54 62 35 12 24 91 57",
+            "output": "[59, 22, 64, 51, 12, 43, 75, 27, 98, 39, 17, 11, 35, 5, 5, 38, 18, 54, 62, 35, 12, 24, 91, 57]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "25\n0 41 25 42 58 55 83 67 16 79 68 73 30 52 91 56 75 60 34 26 76 50 45 63 24",
+            "output": "[0, 41, 25, 42, 58, 55, 83, 67, 16, 79, 68, 73, 30, 52, 91, 56, 75, 60, 34, 26, 76, 50, 45, 63, 24]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "26\n15 70 96 44 18 52 61 85 62 31 34 66 48 62 54 84 11 79 71 44 56 20 41 67 22 81",
+            "output": "[15, 70, 96, 44, 18, 52, 61, 85, 62, 31, 34, 66, 48, 62, 54, 84, 11, 79, 71, 44, 56, 20, 41, 67, 22, 81]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "27\n62 16 71 68 33 29 10 52 12 79 49 55 72 33 77 9 55 13 11 66 32 82 59 88 81 75 80",
+            "output": "[62, 16, 71, 68, 33, 29, 10, 52, 12, 79, 49, 55, 72, 33, 77, 9, 55, 13, 11, 66, 32, 82, 59, 88, 81, 75, 80]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "28\n11 80 71 10 3 64 88 55 0 46 27 33 63 8 29 10 5 9 61 62 12 30 53 97 35 10 45 8",
+            "output": "[11, 80, 71, 10, 3, 64, 88, 55, 0, 46, 27, 33, 63, 8, 29, 10, 5, 9, 61, 62, 12, 30, 53, 97, 35, 10, 45, 8]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "29\n86 94 28 36 86 72 26 49 29 8 94 11 45 33 90 13 29 29 77 66 58 34 32 92 94 15 51 72 7",
+            "output": "[86, 94, 28, 36, 86, 72, 26, 49, 29, 8, 94, 11, 45, 33, 90, 13, 29, 29, 77, 66, 58, 34, 32, 92, 94, 15, 51, 72, 7]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "30\n1 47 81 58 35 42 71 10 95 100 48 82 30 45 49 9 46 94 24 40 22 70 31 49 68 54 17 15 93 98",
+            "output": "[1, 47, 81, 58, 35, 42, 71, 10, 95, 100, 48, 82, 30, 45, 49, 9, 46, 94, 24, 40, 22, 70, 31, 49, 68, 54, 17, 15, 93, 98]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "31\n47 9 59 40 14 99 75 14 46 41 40 88 77 62 83 55 89 72 72 78 46 10 48 88 15 27 50 7 18 94 85",
+            "output": "[47, 9, 59, 40, 14, 99, 75, 14, 46, 41, 40, 88, 77, 62, 83, 55, 89, 72, 72, 78, 46, 10, 48, 88, 15, 27, 50, 7, 18, 94, 85]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "32\n70 33 62 69 46 10 15 59 85 16 67 91 23 11 90 83 72 46 71 30 3 4 91 86 98 1 45 11 86 65 55 3",
+            "output": "[70, 33, 62, 69, 46, 10, 15, 59, 85, 16, 67, 91, 23, 11, 90, 83, 72, 46, 71, 30, 3, 4, 91, 86, 98, 1, 45, 11, 86, 65, 55, 3]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "33\n30 5 34 5 65 7 12 48 72 62 57 26 9 2 58 90 44 43 47 2 57 1 89 72 95 58 21 87 12 51 66 56 64",
+            "output": "[30, 5, 34, 5, 65, 7, 12, 48, 72, 62, 57, 26, 9, 2, 58, 90, 44, 43, 47, 2, 57, 1, 89, 72, 95, 58, 21, 87, 12, 51, 66, 56, 64]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "34\n85 49 78 45 66 21 23 1 17 97 11 45 20 28 32 46 93 80 35 100 49 59 63 84 66 41 90 58 18 43 70 57 95 89",
+            "output": "[85, 49, 78, 45, 66, 21, 23, 1, 17, 97, 11, 45, 20, 28, 32, 46, 93, 80, 35, 100, 49, 59, 63, 84, 66, 41, 90, 58, 18, 43, 70, 57, 95, 89]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "35\n17 75 76 80 78 23 15 33 10 55 45 71 54 48 90 17 37 54 44 17 71 60 11 61 52 98 21 88 12 45 34 30 36 22 15",
+            "output": "[17, 75, 76, 80, 78, 23, 15, 33, 10, 55, 45, 71, 54, 48, 90, 17, 37, 54, 44, 17, 71, 60, 11, 61, 52, 98, 21, 88, 12, 45, 34, 30, 36, 22, 15]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "36\n50 2 28 33 64 96 36 95 20 60 26 64 3 32 4 64 38 54 42 1 54 10 60 68 45 23 80 73 48 37 69 15 82 40 71 89",
+            "output": "[50, 2, 28, 33, 64, 96, 36, 95, 20, 60, 26, 64, 3, 32, 4, 64, 38, 54, 42, 1, 54, 10, 60, 68, 45, 23, 80, 73, 48, 37, 69, 15, 82, 40, 71, 89]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "37\n100 17 53 51 60 44 1 27 1 19 72 48 32 46 62 95 71 38 81 13 24 6 85 49 86 50 100 31 74 85 15 69 34 2 43 71 5",
+            "output": "[100, 17, 53, 51, 60, 44, 1, 27, 1, 19, 72, 48, 32, 46, 62, 95, 71, 38, 81, 13, 24, 6, 85, 49, 86, 50, 100, 31, 74, 85, 15, 69, 34, 2, 43, 71, 5]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "38\n51 8 4 3 57 53 54 16 64 14 64 74 60 11 96 50 7 1 10 98 4 57 96 98 96 65 25 20 29 71 39 10 2 35 10 37 81 44",
+            "output": "[51, 8, 4, 3, 57, 53, 54, 16, 64, 14, 64, 74, 60, 11, 96, 50, 7, 1, 10, 98, 4, 57, 96, 98, 96, 65, 25, 20, 29, 71, 39, 10, 2, 35, 10, 37, 81, 44]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "39\n17 21 33 4 43 39 31 72 42 27 82 1 75 57 18 88 93 51 30 59 60 81 67 13 33 47 98 63 28 51 86 85 66 97 26 91 7 9 30",
+            "output": "[17, 21, 33, 4, 43, 39, 31, 72, 42, 27, 82, 1, 75, 57, 18, 88, 93, 51, 30, 59, 60, 81, 67, 13, 33, 47, 98, 63, 28, 51, 86, 85, 66, 97, 26, 91, 7, 9, 30]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "40\n86 9 71 0 80 78 53 69 54 36 69 68 84 85 48 22 27 74 1 96 99 29 49 32 23 16 1 40 2 32 79 56 27 80 20 46 73 8 87 50",
+            "output": "[86, 9, 71, 0, 80, 78, 53, 69, 54, 36, 69, 68, 84, 85, 48, 22, 27, 74, 1, 96, 99, 29, 49, 32, 23, 16, 1, 40, 2, 32, 79, 56, 27, 80, 20, 46, 73, 8, 87, 50]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "41\n36 56 20 24 26 32 22 30 75 2 71 13 29 70 30 78 46 70 49 9 43 45 9 47 44 62 8 3 41 70 49 17 69 37 99 0 56 79 20 54 15",
+            "output": "[36, 56, 20, 24, 26, 32, 22, 30, 75, 2, 71, 13, 29, 70, 30, 78, 46, 70, 49, 9, 43, 45, 9, 47, 44, 62, 8, 3, 41, 70, 49, 17, 69, 37, 99, 0, 56, 79, 20, 54, 15]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "42\n47 7 78 33 86 13 8 81 26 19 0 62 32 32 74 38 66 90 32 68 47 7 84 7 82 81 41 50 74 36 20 87 50 67 74 52 79 9 93 78 1 96",
+            "output": "[47, 7, 78, 33, 86, 13, 8, 81, 26, 19, 0, 62, 32, 32, 74, 38, 66, 90, 32, 68, 47, 7, 84, 7, 82, 81, 41, 50, 74, 36, 20, 87, 50, 67, 74, 52, 79, 9, 93, 78, 1, 96]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "43\n88 68 70 45 18 78 50 86 63 76 93 99 51 51 69 58 31 86 22 57 59 20 5 33 45 69 41 4 1 98 100 84 73 9 23 3 92 20 53 76 6 100 86",
+            "output": "[88, 68, 70, 45, 18, 78, 50, 86, 63, 76, 93, 99, 51, 51, 69, 58, 31, 86, 22, 57, 59, 20, 5, 33, 45, 69, 41, 4, 1, 98, 100, 84, 73, 9, 23, 3, 92, 20, 53, 76, 6, 100, 86]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "44\n83 18 14 8 72 66 32 56 15 47 53 24 23 62 41 85 19 72 28 64 18 97 23 61 4 87 29 17 23 19 19 97 32 12 43 28 29 4 79 87 74 91 9 56",
+            "output": "[83, 18, 14, 8, 72, 66, 32, 56, 15, 47, 53, 24, 23, 62, 41, 85, 19, 72, 28, 64, 18, 97, 23, 61, 4, 87, 29, 17, 23, 19, 19, 97, 32, 12, 43, 28, 29, 4, 79, 87, 74, 91, 9, 56]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "45\n54 97 91 55 15 81 57 24 18 82 32 62 55 64 72 81 17 20 99 42 24 29 92 99 61 10 71 95 75 48 98 37 95 54 80 1 64 37 13 38 10 3 54 95 68",
+            "output": "[54, 97, 91, 55, 15, 81, 57, 24, 18, 82, 32, 62, 55, 64, 72, 81, 17, 20, 99, 42, 24, 29, 92, 99, 61, 10, 71, 95, 75, 48, 98, 37, 95, 54, 80, 1, 64, 37, 13, 38, 10, 3, 54, 95, 68]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "46\n77 62 89 35 11 3 18 91 93 9 53 32 67 28 61 71 43 96 45 17 27 26 34 60 1 17 15 52 30 61 6 34 0 9 96 72 95 95 80 53 71 38 67 47 87 48",
+            "output": "[77, 62, 89, 35, 11, 3, 18, 91, 93, 9, 53, 32, 67, 28, 61, 71, 43, 96, 45, 17, 27, 26, 34, 60, 1, 17, 15, 52, 30, 61, 6, 34, 0, 9, 96, 72, 95, 95, 80, 53, 71, 38, 67, 47, 87, 48]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "47\n32 71 79 57 66 79 56 66 75 50 59 93 18 20 1 77 51 83 1 18 23 25 70 76 80 7 81 11 24 1 72 54 97 98 78 31 85 45 8 10 38 96 44 80 78 1 21",
+            "output": "[32, 71, 79, 57, 66, 79, 56, 66, 75, 50, 59, 93, 18, 20, 1, 77, 51, 83, 1, 18, 23, 25, 70, 76, 80, 7, 81, 11, 24, 1, 72, 54, 97, 98, 78, 31, 85, 45, 8, 10, 38, 96, 44, 80, 78, 1, 21]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "48\n23 98 76 26 89 52 77 86 4 59 68 75 40 25 80 97 85 53 18 84 72 96 68 95 92 90 22 64 24 67 60 40 14 72 76 6 48 9 49 83 73 59 84 93 78 56 17 47",
+            "output": "[23, 98, 76, 26, 89, 52, 77, 86, 4, 59, 68, 75, 40, 25, 80, 97, 85, 53, 18, 84, 72, 96, 68, 95, 92, 90, 22, 64, 24, 67, 60, 40, 14, 72, 76, 6, 48, 9, 49, 83, 73, 59, 84, 93, 78, 56, 17, 47]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "49\n67 12 4 65 36 83 84 36 23 70 49 60 49 25 34 97 90 21 39 1 4 71 21 34 74 17 1 47 32 2 99 83 81 57 2 11 93 47 13 51 87 30 36 78 47 41 7 34 65",
+            "output": "[67, 12, 4, 65, 36, 83, 84, 36, 23, 70, 49, 60, 49, 25, 34, 97, 90, 21, 39, 1, 4, 71, 21, 34, 74, 17, 1, 47, 32, 2, 99, 83, 81, 57, 2, 11, 93, 47, 13, 51, 87, 30, 36, 78, 47, 41, 7, 34, 65]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "50\n77 82 43 26 84 31 27 65 99 57 43 37 81 71 21 9 16 94 9 45 6 58 31 31 58 81 27 17 6 23 37 60 95 51 38 95 85 61 59 24 80 66 67 46 94 0 0 42 78 54",
+            "output": "[77, 82, 43, 26, 84, 31, 27, 65, 99, 57, 43, 37, 81, 71, 21, 9, 16, 94, 9, 45, 6, 58, 31, 31, 58, 81, 27, 17, 6, 23, 37, 60, 95, 51, 38, 95, 85, 61, 59, 24, 80, 66, 67, 46, 94, 0, 0, 42, 78, 54]",
+            "timeout": 1000,
+            "score": 2,
+            "locked": true
+        },
+        {
+            "input": "1\n89",
+            "output": "[89]",
+            "timeout": 1000,
+            "score": 4,
+            "locked": true
+        },
+        {
+            "input": "0\n",
+            "output": "[]",
+            "timeout": 1000,
+            "score": 4,
+            "locked": true
+        }
+    ],
+    "templates": {
+        "c": "#include <stdio.h>\nint main() {\n    // your code goes here\n    return 0;\n}",
+        "cpp": "#include <iostream>\nusing namespace std;\nint main() {\n    // your code goes here\n    return 0;\n}",
+        "py": "# your code goes here",
+        "java": "import java.util.*;\npublic class Main {\n    public static void main(String[] args) {\n        // your code goes here\n    }\n}",
+        "js": "// your code goes here"
+    }
+}
